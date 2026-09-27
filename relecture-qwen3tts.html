@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="fr">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Réécoute pédagogique — Qwen3-TTS</title>
+<style>
+  :root { color-scheme: light; }
+  body { max-width: 830px; margin: 2rem auto; padding: 0 1rem 3rem; font: 1rem/1.55 system-ui, sans-serif; color: #193046; }
+  h1 { line-height: 1.2; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: .8rem; }
+  .card { border: 1px solid #bbcbd9; border-radius: 12px; padding: 1rem; margin: 1rem 0; }
+  .muted { color: #4d6072; }
+  .warning { border-left: 4px solid #bd6b00; padding-left: .8rem; }
+  label { display: block; font-weight: 600; margin: .5rem 0 .25rem; }
+  select, button, textarea { font: inherit; }
+  select, textarea { width: 100%; padding: .45rem; box-sizing: border-box; }
+  button { padding: .5rem .8rem; margin: .25rem .3rem .25rem 0; cursor: pointer; }
+  audio { width: 100%; }
+  #spoken { font-size: 1.25rem; }
+  #status { min-height: 1.5rem; }
+</style>
+<h1>Réécoute pédagogique des audios Qwen3-TTS</h1>
+<p>Écoutez chaque enregistrement avec le texte et sa fonction dans l’atelier. Vérifiez les mots, les liaisons, le débit, les pauses et l’intonation. Les corrections et les réponses sont ici visibles uniquement pour la révision, pas pour l’apprenant.</p>
+<p class="warning">Aucun fichier n’est approuvé automatiquement. La transcription automatique repère des anomalies possibles, mais ne juge pas la prosodie native.</p>
+<p id="progress" aria-live="polite">Chargement…</p>
+<div class="grid">
+  <div><label for="category">Catégorie</label><select id="category"><option value="core">Segments pédagogiques</option><option value="optional">Interface et accessibilité</option><option value="all">Tous</option></select></div>
+  <div><label for="section">Partie</label><select id="section"><option value="all">Toutes les parties</option></select></div>
+  <div><label for="role">Fonction</label><select id="role"><option value="all">Toutes les fonctions</option></select></div>
+</div>
+<label for="clip">Enregistrement</label><select id="clip"></select>
+<main class="card">
+  <h2 id="clip-title"></h2>
+  <p id="display" class="muted"></p>
+  <p id="spoken"></p>
+  <audio id="player" controls preload="none"></audio>
+  <p id="context"></p>
+  <p id="prosody"></p>
+  <p id="reveal" class="muted"></p>
+  <p id="asr" class="muted"></p>
+  <label for="note">Observation précise</label><textarea id="note" rows="3" placeholder="Mot, liaison, rythme ou intonation à corriger…"></textarea>
+  <div>
+    <button type="button" data-rating="valide">Prononciation et prosodie validées</button>
+    <button type="button" data-rating="a_refaire">À refaire</button>
+    <button type="button" data-rating="incertain">À réécouter</button>
+  </div>
+  <button id="next" type="button">Passer au suivant non évalué</button>
+  <p id="status" aria-live="polite"></p>
+</main>
+<button id="export" type="button">Exporter les évaluations en CSV</button>
+<p class="muted">Les évaluations restent dans ce navigateur. Cette page locale ne publie pas les audios et ne modifie pas le manifeste. Lancez-la depuis un serveur HTTP local pour charger le catalogue.</p>
+<script>
+  const $ = id => document.getElementById(id);
+  const storageKey = 'plug-charge-qwen3tts-review-v1';
+  const reviews = JSON.parse(localStorage.getItem(storageKey) || '{}');
+  let manifest = {}, catalogue = {}, qa = {}, visible = [];
+  const isCore = e => e.generation === 'candidat_apres_ecoute_humaine';
+  const currentId = () => $('clip').value;
+  function list() {
+    const old = currentId();
+    const category = $('category').value, section = $('section').value, role = $('role').value;
+    visible = Object.values(catalogue).filter(e => manifest[e.id] &&
+      (category === 'all' || (category === 'core') === isCore(e)) &&
+      (section === 'all' || e.section === section) &&
+      (role === 'all' || e.role === role));
+    $('clip').replaceChildren(...visible.map(e => {
+      const option = document.createElement('option');
+      option.value = e.id;
+      option.textContent = `${reviews[e.id]?.rating ? '✓' : '○'} ${e.id} — ${e.display_text.slice(0, 65)}`;
+      return option;
+    }));
+    if (visible.some(e => e.id === old)) $('clip').value = old;
+    show();
+  }
+  function show() {
+    const id = currentId(), entry = catalogue[id], clip = manifest[id];
+    $('player').pause();
+    $('player').removeAttribute('src');
+    $('player').load();
+    if (!entry || !clip) {
+      $('clip-title').textContent = 'Aucun enregistrement dans ce filtre';
+      return;
+    }
+    $('clip-title').textContent = `${entry.order}. ${id}`;
+    $('display').textContent = `Affiché : ${entry.display_text}`;
+    $('spoken').textContent = clip.text.replace(/<break time="[0-9.]+s"\s*\/>/g, ' [pause] ');
+    $('player').src = `${clip.file}?v=${clip.sha256.slice(0, 12)}`;
+    $('context').textContent = `Contexte : ${entry.meaning}`;
+    $('prosody').textContent = `Prosodie attendue : ${entry.prosody}`;
+    $('reveal').textContent = `Fonction : ${entry.role}. Apparition dans l’atelier : ${entry.reveal}.`;
+    const result = qa[id];
+    $('asr').textContent = result ? `Transcription automatique : « ${result.transcribed} » — écart lexical ${Math.round(result.word_error_rate * 100)} %.${result.answer_possibly_disclosed ? ' ATTENTION : réponse possiblement entendue.' : ''}` : 'Transcription automatique en attente.';
+    $('note').value = reviews[id]?.note || '';
+    $('status').textContent = reviews[id]?.rating ? `Évaluation enregistrée : ${reviews[id].rating}.` : 'À évaluer.';
+  }
+  function save(rating) {
+    const id = currentId();
+    if (!id) return;
+    reviews[id] = {rating, note: $('note').value.trim(), date: new Date().toISOString(), sha256: manifest[id].sha256};
+    localStorage.setItem(storageKey, JSON.stringify(reviews));
+    $('status').textContent = `Évaluation enregistrée : ${rating}.`;
+    const option = $('clip').selectedOptions[0];
+    if (option) option.textContent = option.textContent.replace(/^./, '✓');
+    progress();
+  }
+  function progress() {
+    const total = Object.keys(manifest).length;
+    const valid = Object.entries(reviews).filter(([id, r]) => manifest[id] && r.sha256 === manifest[id].sha256 && r.rating === 'valide').length;
+    const reviewed = Object.entries(reviews).filter(([id, r]) => manifest[id] && r.sha256 === manifest[id].sha256).length;
+    $('progress').textContent = `${total} fichiers ; ${reviewed} évalués ; ${valid} validés pour cette version audio.`;
+  }
+  document.querySelectorAll('[data-rating]').forEach(button => button.onclick = () => save(button.dataset.rating));
+  $('next').onclick = () => {
+    const index = visible.findIndex(e => e.id === currentId());
+    const next = visible.slice(index + 1).concat(visible.slice(0, index + 1)).find(e =>
+      !reviews[e.id] || reviews[e.id].sha256 !== manifest[e.id].sha256);
+    if (next) { $('clip').value = next.id; show(); } else $('status').textContent = 'Tous les fichiers de ce filtre ont été évalués.';
+  };
+  $('export').onclick = () => {
+    const quote = x => `"${String(x ?? '').replaceAll('"', '""')}"`;
+    const rows = [['id','section','role','texte','transcription_ASR','ecart_lexical','note','evaluation','sha256','date']];
+    for (const [id, review] of Object.entries(reviews)) {
+      const entry = catalogue[id];
+      rows.push([id, entry?.section, entry?.role, manifest[id]?.text, qa[id]?.transcribed,
+        qa[id]?.word_error_rate, review.note, review.rating, review.sha256, review.date]);
+    }
+    const blob = new Blob(['\ufeff' + rows.map(row => row.map(quote).join(';')).join('\r\n')], {type: 'text/csv;charset=utf-8'});
+    const url = URL.createObjectURL(blob), anchor = document.createElement('a');
+    anchor.href = url; anchor.download = 'relecture-qwen3tts.csv'; anchor.click();
+    setTimeout(() => URL.revokeObjectURL(url), 1000);
+  };
+  $('clip').onchange = show;
+  [$('category'), $('section'), $('role')].forEach(select => select.onchange = list);
+  Promise.all([
+    fetch('audio/qwen3-tts/manifest.json').then(r => { if (!r.ok) throw Error('Manifeste absent'); return r.json(); }),
+    fetch('audio/catalogue-elevenlabs-v2.json').then(r => r.json()),
+    fetch('audio/qwen3-tts/qa-transcription.json').then(r => r.ok ? r.json() : {clips: {}}).catch(() => ({clips: {}})),
+  ]).then(([m, c, q]) => {
+    manifest = m.clips;
+    catalogue = Object.fromEntries(c.entries.map(entry => [entry.id, entry]));
+    qa = q.clips;
+    for (const key of ['section', 'role']) {
+      const values = [...new Set(Object.values(catalogue).filter(e => manifest[e.id]).map(e => e[key]))].sort();
+      for (const value of values) { const option = document.createElement('option'); option.value = value; option.textContent = value; $(key).append(option); }
+    }
+    list(); progress();
+  }).catch(error => $('progress').textContent = `Impossible de charger les fichiers : ${error.message}`);
+</script>
+</html>

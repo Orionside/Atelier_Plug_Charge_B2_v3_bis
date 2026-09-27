@@ -1,0 +1,1702 @@
+{
+  "asr_model": "/Users/toufik/.cache/huggingface/hub/models--mlx-community--whisper-large-v3-turbo/snapshots/a4aaeec0636e6fef84abdcbe3544cb2bf7e9f6fb",
+  "limitation": "La transcription ne mesure pas la prosodie native.",
+  "clips": {
+    "forme-p1": {
+      "sha256": "c2c4d6885d3afbffbcc486e4b7b5a079f9e920f37c0aa000dcffe24441767ea2",
+      "expected": "L'idée, c'est que<break time=\"0.45s\" />",
+      "transcribed": "L'idée, c'est que...",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "gap-a-0": {
+      "sha256": "fddd223ff4081348f8ca9a8d95d17f4ad35ccd8d825cdb12e7a0b8207586507a",
+      "expected": "C'est un nouveau protocole de <break time=\"0.8s\" /> entre, d'un côté, le véhicule et, de l'autre, les bornes.",
+      "transcribed": "C'est un nouveau protocole de... Entre, d'un côté, le véhicule et de l'autre, les bornes.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "intro-consigne": {
+      "sha256": "8c706655b340fd578eacad507b14eab19aba2f5f9722d053aa4efb722adb4847",
+      "expected": "Aujourd'hui, vous apprenez à expliquer quelque chose de compliqué avec des mots simples, puis à vérifier que l'autre a bien compris. En une minute, sans chercher vos mots.",
+      "transcribed": "Aujourd'hui, vous apprenez à expliquer quelque chose de compliqué avec des mots simples, puis à vérifier que l'autre a bien compris. En une minute, sans chercher vos mots.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "sit-dialogue": {
+      "sha256": "24003d0c50e057e3f19423ec60abe989a8afe256a5a5f6f56c2c4948aef18564",
+      "expected": "On m'a parlé du nouvel outil de signature électronique. Tu peux m'expliquer simplement comment ça marche ?",
+      "transcribed": "On m'a parlé du nouvel outil de signature électronique. Tu peux m'expliquer simplement comment ça marche ?",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "sit-mission": {
+      "sha256": "1377b8a2b91fa22bebdc17317135dc651e9c83e1fb57bbff75582e6d8dbc6f79",
+      "expected": "Vous connaissez bien cet outil. Expliquez simplement, étape par étape, puis vérifiez qu'il a bien compris.",
+      "transcribed": "Vous connaissez bien cet outil. Expliquez simplement, étape par étape, puis vérifiez qu'il a bien compris.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "sit-consigne": {
+      "sha256": "32294bdc3f53f54b7efa41f34549bf5f601ae181705796382560a62c0c510f45",
+      "expected": "Expliquez-lui. En une minute.",
+      "transcribed": "Expliquez-lui en une minute.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "sit-perso-question": {
+      "sha256": "f6b7f2a453b26cd7cd38ae941904e107cfb634e6ce9c482e12e28569949cd360",
+      "expected": "Vous préférez un sujet de votre travail ? Dans votre entreprise, qu'est-ce que vous pourriez expliquer à un nouveau collègue ?",
+      "transcribed": "Vous préférez un sujet de votre travail ? Dans votre entreprise, qu'est-ce que vous pourriez expliquer à un nouveau collègue ?",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "etape-0-titre": {
+      "sha256": "29e4b3d34b8b9fac1062554c217aec774cf6f59d9d70f2c30156dd4adbdacb1a",
+      "expected": "Aujourd'hui",
+      "transcribed": "Aujourd'hui,",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "titre-seance": {
+      "sha256": "e574a5bbdd61683d7f8c5bb094b7c4ffe66b2320cd7bb43492fe388cdc3d1bce",
+      "expected": "Expliquer simplement… et vérifier qu'on s'est compris",
+      "transcribed": "expliquer simplement et vérifier qu'on s'est compris.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "titre-support": {
+      "sha256": "24ab7ea8369e9836075a0a0ca304b2396ec007b1982acafac8bf6587db98aaac",
+      "expected": "Plug and Charge",
+      "transcribed": "Plug and charge.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "lieu-situation": {
+      "sha256": "69a8d566b2b2da15a9e912a10b54f9b943c783d4bfd6e82131af737dbc5dc2e8",
+      "expected": "Au bureau, à la machine à café",
+      "transcribed": "au bureau à la machine à café.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "interlocuteur-situation": {
+      "sha256": "d92bff07eca9bd5f20315d432daa7718ee8c172a017a536a1346c61bb1e6a3a8",
+      "expected": "Un nouveau collègue",
+      "transcribed": "un nouveau collègue.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "exemple-sujet-personnel": {
+      "sha256": "ccac4e8aa56128988290f6076cce30429ad26f64e4010fc1cecf32f64af4f048",
+      "expected": "Par exemple: un logiciel, une procédure, un projet, un service.",
+      "transcribed": "par exemple un logiciel, une procédure, un projet, un service.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "interface-001": {
+      "sha256": "2e489471cef4269694c398f1a268d2fd9e760f56e93ff13c415e2de0931e36a9",
+      "expected": "Le programme",
+      "transcribed": "le programme",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "interface-002": {
+      "sha256": "2f0d9a9f39dd70ade8e9038dd8e6a9d6f5c3f8b28d81d9c6e31a812f71973b42",
+      "expected": "Le sujet du jour",
+      "transcribed": "Le sujet du jour ?",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "interface-003": {
+      "sha256": "32f1d335c41dc3461e98951db22e8f14d12d2f02cd57c6d496363ec17acbaead",
+      "expected": "Votre sujet",
+      "transcribed": "Votre sujet ?",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "interface-004": {
+      "sha256": "65117173329c335fc7d84cea8c23cf7149523ca1e17b3e05527ce1f842acd036",
+      "expected": "Où ?",
+      "transcribed": "ou",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "interface-005": {
+      "sha256": "444ff97e992920a3b64db1579fadf4090b2a8d86b8abdbe3a5b6d16faab9591d",
+      "expected": "Qui parle ?",
+      "transcribed": "Qui parle ?",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "interface-006": {
+      "sha256": "321f1761e569b1357ec7e47e99434a4b8e9205ec03a1531b39d874c96bee04a0",
+      "expected": "Vous",
+      "transcribed": "Vous.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "interface-007": {
+      "sha256": "8db6e2111b62418094ad0819544124322199f49fd120e4276424bb06e1c5645b",
+      "expected": "À vous",
+      "transcribed": "À vous !",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "interface-008": {
+      "sha256": "63fce2d44abb2610b6f257f6436e3c6af73850b085ff4a3d8b4be6585bde167f",
+      "expected": "Vous pouvez reprendre un sujet de votre semaine, dont vous avez parlé avec votre formateur.",
+      "transcribed": "Vous pouvez reprendre un sujet de votre semaine dont vous avez parlé avec votre formateur.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "interface-009": {
+      "sha256": "59dd1aeb22e53d9aaca2ba1ee7912e884e71cbecbcb2534a2d9e38b82b46a8b1",
+      "expected": "Le cours utilise le micro de votre ordinateur. Autorisez-le quand le navigateur le demande.",
+      "transcribed": "Le cours utilise le micro de votre ordinateur. Autorisez-le quand le navigateur le demande.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "plan-1": {
+      "sha256": "3400d88fb5999ef7bd7b03623938c633f56178303cb87e52ee6f381b5510220f",
+      "expected": "Le principe. Phrase utile: L'idée, c'est que<break time=\"0.45s\" />",
+      "transcribed": "le principe. Phrase utile, l'idée c'est que...",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "plan-2": {
+      "sha256": "7efed8459a7ce597596f78ae4c55a815b46993c1844c60b064da93c3dea0818d",
+      "expected": "Comment faire. Phrase utile: Il suffit de<break time=\"0.45s\" />",
+      "transcribed": "Comment faire ? Phrase utile, il suffit de…",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "plan-3": {
+      "sha256": "8cc9abb5585420eff9534c67dffa0ede6a7498604da05b0fa739279a76abeb94",
+      "expected": "Une différence. Phrase utile: Ce n'est pas tout à fait la même chose que<break time=\"0.45s\" />",
+      "transcribed": "une différence. Phrase utile, ce n'est pas tout à fait la même chose que",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "plan-4": {
+      "sha256": "704e126810e9a423f8e634cbc2314f7f7e45172ec637e73cdaaeb265ac66be12",
+      "expected": "Vérifier. Phrase utile: On est bien d'accord que<break time=\"0.45s\" />",
+      "transcribed": "Vérifier. Phrase utile, on est bien d'accord que...",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "avant-consigne": {
+      "sha256": "c3e7bcb4175c0e5fac912517e63ffaec60ea6a2230950827f43105586ae2091d",
+      "expected": "Donnez votre avis sur le sujet, sans préparer. Les erreurs ne sont pas un problème. À la fin du cours, vous parlerez encore une minute: vous verrez la différence.",
+      "transcribed": "Donnez votre avis sur le sujet sans préparer. Les erreurs ne sont pas un problème. A la fin du cours, vous parlerez encore une minute. Vous verrez la différence.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "auto-evaluation-difficulte-1": {
+      "sha256": "9342dc1ebf023a6ca22711d97883d4fce7e9fb1c0539d79de02b0d3d1fac27d1",
+      "expected": "Je cherchais mes mots",
+      "transcribed": "Je cherchais mes mots.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "auto-evaluation-difficulte-2": {
+      "sha256": "1966cb27fb29947480a6b355028d158953f66b6b80ed8655af6b26e4fb88e760",
+      "expected": "Je ne savais pas comment commencer",
+      "transcribed": "Je ne savais pas comment commencer.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "auto-evaluation-difficulte-3": {
+      "sha256": "ed3a1eef5d941a604ecbcc893d5879b6ec39e5d74663fa8d586a1e54c4287728",
+      "expected": "Mon explication était trop compliquée",
+      "transcribed": "Mon explication était trop compliquée.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "auto-evaluation-difficulte-4": {
+      "sha256": "9f53cc99e24029fc15ec181139c778da6e67f05f65096a220012fd0331cd58b8",
+      "expected": "Je n'étais pas sûr ou sûre de ma prononciation",
+      "transcribed": "Je n'étais pas sûre ou sûre de ma prononciation.",
+      "word_error_rate": 0.1,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "auto-evaluation-difficulte-5": {
+      "sha256": "56c3c8a83d377f3249ca99fe7947cd778a448fa2710f72cf97d9dd27e9c3f8d9",
+      "expected": "Rien de spécial",
+      "transcribed": "Rien de spécial.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "interface-010": {
+      "sha256": "56bd948bf3acea539c5c0f9f9e65045948e41e0f35d1cd9b09fa555f3b3a261c",
+      "expected": "Vous pouvez suivre ce plan",
+      "transcribed": "Vous pouvez suivre ce plan.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "interface-011": {
+      "sha256": "8fc0acd9396b1fd5eb01efad4b457dbbce2e24351f5a49e3c360a4ffbba98946",
+      "expected": "Enregistrez-vous",
+      "transcribed": "Enregistrez-vous.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "interface-012": {
+      "sha256": "a85f16b54f7df48eb02f8c8d7e64179746de8ca3caf0d1e29e5500aa88a0dce1",
+      "expected": "Pendant la minute qui suit.",
+      "transcribed": "pendant la minute qui suit.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "interface-013": {
+      "sha256": "c49e124268330762411c4a3a73d0ea66d841ee9f411efbb0cff22f7c4db986e2",
+      "expected": "Touchez ce qui est vrai pour vous.",
+      "transcribed": "Touchez ce qui est vrai pour vous.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "etape-1-titre": {
+      "sha256": "890e8cdd8ad92d9e7032616faa78d9b90f5847b299cb6f3ad2289f12d4a61982",
+      "expected": "Je parle une minute",
+      "transcribed": "Je parle une minute.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "etape-1-description": {
+      "sha256": "6478bff12605ecf5a507a2556662ef8b770d9d32ccf7555f44f32b11abc504af",
+      "expected": "Je donne mon avis, sans préparer.",
+      "transcribed": "Je donne mon avis sans préparer.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-consigne": {
+      "sha256": "f5e4710d8243224b5f324779da66a0c5f6c2b379c90ca97e382614be95154ec3",
+      "expected": "Deux extraits courts. Pour chaque extrait: devinez, écoutez, répondez, réécoutez.",
+      "transcribed": "deux extraits courts. Pour chaque extrait, devinez, écoutez, répondez, réécoutez.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-a-pourquoi": {
+      "sha256": "89fe629a754a8340be7359017e3c77172e51dba6a5851e611fc2a3c30b5dcb35",
+      "expected": "Pourquoi cet extrait ? Le directeur technique explique une technologie compliquée avec des mots simples. C'est ce que vous allez faire.",
+      "transcribed": "Pourquoi cet extrait ? Le directeur technique explique une technologie compliquée avec des mots simples. C'est ce que vous allez faire.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-a-devine": {
+      "sha256": "f738eaeb6ac8401957d1d75c0a8a673dc53c589e145211bbb4b7830af989ecc8",
+      "expected": "Plug veut dire brancher. Charge veut dire recharger. À votre avis, que fait le Plug and Charge quand on branche une voiture électrique ? Répondez à voix haute.",
+      "transcribed": "Plug veut dire brancher. Charge veut dire recharger. À votre avis, que fait le plug and charge quand on branche une voiture électrique ? Répondez à voix haute.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "q-a-0": {
+      "sha256": "ee3216d6981c3f1aa0bb92af9a717430a7baf775ad8479314d16985cfc1bdc4d",
+      "expected": "Avec le Plug and Charge, que se passe-t-il quand on branche la voiture ?",
+      "transcribed": "Avec le Plug and Charge, que se passe-t-il quand on branche la voiture ?",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "q-a-0-option-0": {
+      "sha256": "d309b87ff28cf8535b0f076cc8a07d9f6067b87935ed07275df59913ae7f7468",
+      "expected": "Il faut payer avec une carte bancaire.",
+      "transcribed": "il faut payer avec une carte bancaire.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "q-a-0-option-1": {
+      "sha256": "9d14833128aa66d5d9d9c97fcb0d7e19408698f5d531c02452acf3c50340ef9e",
+      "expected": "La recharge démarre toute seule, sans carte.",
+      "transcribed": "La recharge démarre toute seule, sans carte.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "q-a-0-option-2": {
+      "sha256": "72d0cc954cf00ec96db265fd184b6a0a106175d42f0e3bfefd99d339286314a4",
+      "expected": "Il faut appeler l'opérateur.",
+      "transcribed": "il faut appeler l'opérateur.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "q-a-0-expl": {
+      "sha256": "403976c11ab5f928f717dc4d32187f198fde5eae5772d89181506876ed90e555",
+      "expected": "La borne récupère l'identifiant installé dans la voiture, demande l'autorisation, et la charge démarre sans passer de carte.",
+      "transcribed": "la borne récupère l'identifiant installé dans la voiture, demande l'autorisation et la charge démarre sans passer de carte.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "q-a-1": {
+      "sha256": "974ca1cbebc5f131b2024112a50c18b46e31c2ee6a2b3668748187701bea9592",
+      "expected": "Selon lui, cette recharge est plus<break time=\"0.45s\" />",
+      "transcribed": "Selon lui, cette recharge est plus",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "q-a-1-option-0": {
+      "sha256": "603f7799a8fdcea12c290062951539d0a22ecf6474213f63d254dfb62742d818",
+      "expected": "chère et plus lente.",
+      "transcribed": "chère et plus lente.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "q-a-1-option-1": {
+      "sha256": "59d1f3b84e79138a73ff010daf81ef2c74f0c05f8ebed1722c79e00b7561ca2e",
+      "expected": "compliquée, mais plus rapide.",
+      "transcribed": "compliqué mais plus rapide.",
+      "word_error_rate": 0.25,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "q-a-1-option-2": {
+      "sha256": "3d8b4af130774ee13993642936fa0ada611bf1c4185296f51f7496eba7cf6ead",
+      "expected": "simple et plus sûre.",
+      "transcribed": "simple et plus sûr.",
+      "word_error_rate": 0.25,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "q-a-1-expl": {
+      "sha256": "0c30d2d4f5b5c6170062b1f7fe1b9c9cfae85816b7c45651d259b3b42b0a1bdb",
+      "expected": "Une expérience beaucoup plus fluide de recharge, et beaucoup plus intéressante d'un point de vue sécurité.",
+      "transcribed": "Une expérience beaucoup plus fluide de recharge et beaucoup plus intéressante d'un point de vue sécurité.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "gap-a-0-aide": {
+      "sha256": "96971becce8199205ff56585f09040c5e8ca766282fe59c3b0ce43344a87bfdd",
+      "expected": "Indice: cela signifie échange d'informations",
+      "transcribed": "Indice, cela signifie échange d'informations.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "gap-a-0-sol": {
+      "sha256": "b56337e313481fe5f202bc2a4bc7dd3a857c958d6a30327c447dad6b55d3e0bf",
+      "expected": "C'est un nouveau protocole de communication entre, d'un côté, le véhicule et, de l'autre, les bornes.",
+      "transcribed": "C'est un nouveau protocole de communication entre d'un côté le véhicule et de l'autre les bornes.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "gap-a-1": {
+      "sha256": "b073cbb6f063f2f04e8beb924d7a308994f2c038d5b8d6bc5aea7995ca34fad5",
+      "expected": "C'est une expérience beaucoup plus <break time=\"0.8s\" /> de recharge.",
+      "transcribed": "C'est une expérience beaucoup plus de recharge.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "gap-a-1-aide": {
+      "sha256": "19fbe3d0fcd3184d6254907733513b0122edb6c41d4b7ea35ce6e0e0b18addb9",
+      "expected": "Indice: cela signifie simple, sans blocage",
+      "transcribed": "Indice, cela signifie simple, sans blocage.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "gap-a-1-sol": {
+      "sha256": "1d9cf02a7b9cea4fb3fdae9be43e462b417024c96981085c77aea2319f352b9d",
+      "expected": "C'est une expérience beaucoup plus fluide de recharge.",
+      "transcribed": "C'est une expérience beaucoup plus fluide de recharge.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "diff-a": {
+      "sha256": "60f8360668d82ae93bfd0a78b1cff5a202a3c74c4fa1cd523f22cef247490990",
+      "expected": "Anglais, sigle et chiffres arrivent très vite: Plug and Charge, ou plutôt, d'un point de vue technique, ISO quinze mille cent dix-huit. Pas besoin de tout comprendre. Retenez l'expression utile: d'un point de vue technique, c’est-à-dire si on regarde la technique.",
+      "transcribed": "Anglais, sigles et chiffres arrivent très vite. Plug and charge, ou plutôt, d'un point de vue technique, ISO 15118. Pas besoin de tout comprendre. Retenez l'expression utile. D'un point de vue technique, c'est-à-dire si on regarde la technique.",
+      "word_error_rate": 0.125,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-b-pourquoi": {
+      "sha256": "64270538f42c2ddfde94ffd51fcf29fd6f6ec13a7ec542dd93349ec859e1f0b5",
+      "expected": "Pourquoi cet extrait ? Le journaliste reformule pour vérifier qu'il a compris, puis pose une question. Vous allez faire la même chose.",
+      "transcribed": "Pourquoi cet extrait ? Le journaliste reformule pour vérifier qu'il a compris, puis pose une question. Vous allez faire la même chose.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "ecoute-b-devine": {
+      "sha256": "ec85fdfdcbacaab14e899649b02aab0ae85e8a3e3a843bf3a540dc439e2fc3e5",
+      "expected": "Le journaliste pense que, derrière cette simplicité, le système est très compliqué. À votre avis, pourquoi ? Répondez à voix haute.",
+      "transcribed": "Le journaliste pense que, derrière cette simplicité, le système est très compliqué. A votre avis, pourquoi ? Répondez à voix haute.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "q-b-0": {
+      "sha256": "85b52ecab4783b306ec533703f6636feefe1a660e5e5b5541ae19b10aebc19c8",
+      "expected": "Pourquoi le journaliste pense-t-il que c'est compliqué ?",
+      "transcribed": "Pourquoi le journaliste pense-t-il que c'est compliqué ?",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "q-b-0-option-0": {
+      "sha256": "0760aa47b8ee9d3fb82f7ddff65f83686c7ceaf677e8abdc171c0a9abce26702",
+      "expected": "Parce que les voitures électriques sont lentes.",
+      "transcribed": "parce que les voitures électriques sont lentes.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "q-b-0-option-1": {
+      "sha256": "9086f5b8385784d394112bc47809b4c4e48d2722856658bf9271e6cf978c63d0",
+      "expected": "Parce qu'il y a des bornes, des réseaux, des marques et des modèles de voitures différents.",
+      "transcribed": "parce qu'il y a des bornes, des réseaux, des marques et des modèles de voitures différents.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "q-b-0-option-2": {
+      "sha256": "d18ee2028766e0f6208c969ffeca9f543b99ae416e2c1142e3e2cb37fb5d5702",
+      "expected": "Parce que l'application est payante.",
+      "transcribed": "parce que l'application est payante.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "q-b-0-expl": {
+      "sha256": "2c9bb3b2050e109ebd2abfa242784f89b7bcff3b2fd26b6d335d34d7e4592c2d",
+      "expected": "Il y a des bornes qui sont différentes, des réseaux de recharge différents, des marques de voitures différentes, des modèles de voitures différents.",
+      "transcribed": "Il y a des bornes qui sont différentes, des réseaux de recharge différents, des marques de voitures différentes, des modèles de voitures différents.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "q-b-1": {
+      "sha256": "ad2adad6f2bf963f64dcce7ecb5b51b9a95958ca067144e3a9d5761cf5c1c7df",
+      "expected": "Que veut dire une usine à gaz ici ?",
+      "transcribed": "Que veut dire une usine à gaz ici ?",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "q-b-1-option-0": {
+      "sha256": "cb06d6867002560ca2f6433b5915a14cdb6939327b3ced188c0fc7c58a43796f",
+      "expected": "Une usine qui produit du gaz.",
+      "transcribed": "une usine qui produit du gaz.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "q-b-1-option-1": {
+      "sha256": "a6ba81638203ab82380501c4f79b0faacb0155487c9dc76c475bb14218264c44",
+      "expected": "Un système beaucoup trop compliqué.",
+      "transcribed": "Un système beaucoup trop compliqué.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "q-b-1-option-2": {
+      "sha256": "2e895b825ff8398a4ca092bd13ffd4d6b5db29b8e2177bb52475df16c1a5a486",
+      "expected": "Une borne de recharge.",
+      "transcribed": "une borne de recharge.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "q-b-1-expl": {
+      "sha256": "e190dd57b6fdeb157def3a77d100146726e45470e5435f910a97594e6279ce91",
+      "expected": "Une usine à gaz désigne un système trop compliqué. Une expression très courante au bureau.",
+      "transcribed": "Une usine à gaz désigne un système trop compliqué, une expression très courante au bureau.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "gap-b-0": {
+      "sha256": "4a6703369d1c5586a7e1865b8d53d96f3e30f12818166a9e48aabb458b7bd8d7",
+      "expected": "Parce que, si j'ai bien <break time=\"0.8s\" />, il faut que la voiture discute avec la borne.",
+      "transcribed": "Parce que si j'ai bien, il faut que la voiture discute avec la borne.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "gap-b-0-aide": {
+      "sha256": "4b865f410b031bff539b01a55d529844bd26dd5829be0206660a74d49a100e2d",
+      "expected": "Indice: participe passé de comprendre",
+      "transcribed": "Indice. Participe passé de comprendre.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "gap-b-0-sol": {
+      "sha256": "36fcf2a5fe35e23778170e34c6152cd3ef3cad7227aef3c6018c22767b52b7fd",
+      "expected": "Parce que, si j'ai bien compris, il faut que la voiture discute avec la borne.",
+      "transcribed": "Parce que si j'ai bien compris, il faut que la voiture discute avec la borne.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "gap-b-1": {
+      "sha256": "be3ef9f1c9d49652ebbee41fa07c9ac08df014796eef88bc2ebdeef610cc6a8c",
+      "expected": "Ça me semble être une <break time=\"0.8s\" /> à gaz absolument extraordinaire.",
+      "transcribed": "Ça me semble être une agaz absolument extraordinaire.",
+      "word_error_rate": 0.2222,
+      "answer_possibly_disclosed": false,
+      "review_priority": "haute"
+    },
+    "gap-b-1-aide": {
+      "sha256": "4cfa3dcd09bcf3bfa7072d61466c5b5c6d2758f7c3a96cbe79e2bec4ee6bfd8d",
+      "expected": "Indice: cela signifie un grand bâtiment où l'on fabrique quelque chose",
+      "transcribed": "Indice, cela signifie un grand bâtiment où l'on fabrique quelque chose.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "gap-b-1-sol": {
+      "sha256": "d4828e9a95e9ff8df666c8a0467e5db6311fd51237f4b363cc8ce21c30a12ad7",
+      "expected": "Ça me semble être une usine à gaz absolument extraordinaire.",
+      "transcribed": "Ça me semble être une usine à gaz absolument extraordinaire.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "diff-b": {
+      "sha256": "c8803230a5bb84f09c2bc1591873c531988b865c9e834054634c19dbd044327b",
+      "expected": "Ça me semble être une usine à gaz absolument extraordinaire. À quel point c'est un challenge pour Chargemap, du coup ? Du coup veut dire donc: à l'oral, on l'entend partout. Un challenge veut dire un défi, mot anglais très utilisé en entreprise.",
+      "transcribed": "Ça me semble être une usine à gaz absolument extraordinaire. À quel point c'est un challenge pour ChargeMap, du coup ? Du coup veut dire donc, à l'oral, on l'entend partout. Un challenge veut dire un défi, mot anglais très utilisé en entreprise.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "interface-014": {
+      "sha256": "9d06ded8aca946933312be63ba6babc6c9925ef17ca01706aafde7b2f2bed6dc",
+      "expected": "Avant d'écouter: devinez",
+      "transcribed": "Avant d'écouter, devinez",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "interface-015": {
+      "sha256": "574fb23a3110d7b6dc2baaf0d51c8f6cc1588c4044dfddbe97b10b6ed96c3098",
+      "expected": "Écoutez l'extrait, puis répondez",
+      "transcribed": "Écoutez l'extrait, puis répondez",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "interface-016": {
+      "sha256": "7ff4b303c48620817fc64636c5bc382bc5f6c7fdd102b93d27656fcb1f77359c",
+      "expected": "Écoutez encore, puis complétez",
+      "transcribed": "Écoutez encore, puis complétez.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "interface-017": {
+      "sha256": "680f24946fe9d4116576939bb0db4866ffaabfd28733edf008fba0e5bb8a2a2d",
+      "expected": "Le passage difficile",
+      "transcribed": "le passage difficile",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "etape-2-titre": {
+      "sha256": "af53d2f80d7b6100e7960918317f1b3cd41dec159ffd391a10346a9733ea5838",
+      "expected": "J'écoute la vidéo",
+      "transcribed": "J'écoute la vidéo.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "etape-2-description": {
+      "sha256": "f836dc4e32ec955ccaa80460d87f012ed943e78539cefe2b98892e0d915d7e0d",
+      "expected": "Deux extraits courts.",
+      "transcribed": "Deux extraits courts.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "titre-video": {
+      "sha256": "a4b80ecebd07fd3951d9cfecaefa2bb1f798d820ffaa2f21fc35ffe1c68ed58e",
+      "expected": "Tout comprendre au Plug and Charge avec Chargemap ! Une vidéo d'Automobile Propre.",
+      "transcribed": "Tout comprendre au Plug & Charge avec ChargeMap, une vidéo d'automobile propre.",
+      "word_error_rate": 0.0769,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "titre-extrait-1": {
+      "sha256": "52ed073f402cbdd33e9bcec323089374af0892c6cd5bd44ef91a459f31f52829",
+      "expected": "Premier extrait. Le Plug and Charge en quarante secondes.",
+      "transcribed": "Premier extrait, le plug and charge en 40 secondes.",
+      "word_error_rate": 0.1111,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "titre-extrait-2": {
+      "sha256": "d8c077086c0ab3b5a2311d9410e222b85ec7b0e57982c2cde29231101148e83f",
+      "expected": "Deuxième extrait. Une usine à gaz ?",
+      "transcribed": "Deuxième extrait. Une usine à gaz.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "phrases-consigne": {
+      "sha256": "caa8097e633ac2a1f3c31c71267b8e501d7db82036d32cbd494d9e11cb90e7d9",
+      "expected": "Six phrases de la vidéo, très utiles en réunion. Pour chaque phrase: d’abord, écoutez-la dans la vidéo; ensuite, répétez-la à voix haute; enfin, dites votre propre phrase.",
+      "transcribed": "6 phrases de la vidéo très utiles en réunion. Pour chaque phrase, d'abord écoutez-la dans la vidéo, ensuite répétez-la à voix haute. Enfin, dites votre propre phrase.",
+      "word_error_rate": 0.0333,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "phrases-rappel": {
+      "sha256": "0d76f7d9417fd3f63a52c383561796221e668128ce5b36f3f45892c0602ed510",
+      "expected": "Lisez à quoi elle sert, dites la phrase à voix haute, puis cliquez sur Voir la phrase.",
+      "transcribed": "Lisez à quoi elle sert, dites la phrase à voix haute, puis cliquez sur « Voir la phrase ».",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "sert-p1": {
+      "sha256": "e9058862fdd129032186d68a8f8191d86e3f4c937accc31f619812d01e6837f6",
+      "expected": "Pour présenter le principe",
+      "transcribed": "pour présenter le principe",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "p1": {
+      "sha256": "6970fef872cd622dd6b448ee1cc41e1c8657e048d15ebbb94d4f2d9f0d634bc2",
+      "expected": "L'idée, c'est que chaque client signe en ligne, sans imprimer le contrat.",
+      "transcribed": "L'idée, c'est que chaque client signe en ligne, sans imprimer le contrat.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "avous-p1": {
+      "sha256": "4e33191235209fb26cef8d9a84fce62826bf524ae0ab9fcde4db45566df9c2a2",
+      "expected": "Dites votre phrase à voix haute, sur votre travail.",
+      "transcribed": "Dites votre phrase à voix haute sur votre travail.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "sert-p2": {
+      "sha256": "9d22df736e576add01cfb8e712cf3c186593c07bbc56f41de14f8f5e92b3baf8",
+      "expected": "Pour montrer que c'est simple",
+      "transcribed": "pour montrer que c'est simple.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "forme-p2": {
+      "sha256": "7f1a9993005398013f5ca1d7e64dd347d44a565f07b95dbfcc567eaf245864a0",
+      "expected": "Il suffit de<break time=\"0.45s\" />",
+      "transcribed": "il suffit de",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "p2": {
+      "sha256": "d631e11c6c6dedb8e0db3ca5ea2f8ab4e79897f1548cdbbd111690336ab242ab",
+      "expected": "Il suffit d'ouvrir le document, de cliquer sur Signer, et c'est fini.",
+      "transcribed": "Il suffit d'ouvrir le document, de cliquer sur « Signer » et c'est fini.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "avous-p2": {
+      "sha256": "4e33191235209fb26cef8d9a84fce62826bf524ae0ab9fcde4db45566df9c2a2",
+      "expected": "Dites votre phrase à voix haute, sur votre travail.",
+      "transcribed": "Dites votre phrase à voix haute sur votre travail.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "sert-p3": {
+      "sha256": "c3c20d2d0252f43a97bb81f34c70f3d27611f61e2092da85370232f666fef1a1",
+      "expected": "Pour reformuler ce que l'autre a dit",
+      "transcribed": "pour reformuler ce que l'autre a dit.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "forme-p3": {
+      "sha256": "8b5b7df9b93a2df7c8f3fb7a89715e50f2360a97b57012eb5109751ca9f987b2",
+      "expected": "Si j'ai bien compris,<break time=\"0.45s\" />",
+      "transcribed": "Si j'ai bien compris,",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "p3": {
+      "sha256": "970d3c7f9083834739d7bd4398d1272cd28b2399922edf018cd4c57b3a3267c2",
+      "expected": "Si j'ai bien compris, le client signe en ligne, et nous recevons le contrat tout de suite.",
+      "transcribed": "Si j'ai bien compris, le client signe en ligne et nous recevons le contrat tout de suite.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "avous-p3": {
+      "sha256": "4e33191235209fb26cef8d9a84fce62826bf524ae0ab9fcde4db45566df9c2a2",
+      "expected": "Dites votre phrase à voix haute, sur votre travail.",
+      "transcribed": "Dites votre phrase à voix haute sur votre travail.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "sert-p4": {
+      "sha256": "4f5465dda19dee0e31230dd1d61507cea5d3cb0bc3f8d6702efcc224d7aed0c4",
+      "expected": "Pour vérifier un point important",
+      "transcribed": "pour vérifier un point important.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "forme-p4": {
+      "sha256": "37307916bf8eabc9dfe816f553ebe27cc96b01a08637e5e11801729fa13ab6d9",
+      "expected": "On est bien d'accord que<break time=\"0.45s\" />",
+      "transcribed": "On est bien d'accord que...",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "p4": {
+      "sha256": "f8733a0f658f4c71484e2f605e00aa0eccb408b03bec19dbfb23afade87eb5f5",
+      "expected": "On est bien d'accord que je signe une seule fois, et que le client reçoit une copie ?",
+      "transcribed": "on est bien d'accord que je signe une seule fois et que le client reçoit une copie ?",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "avous-p4": {
+      "sha256": "4e33191235209fb26cef8d9a84fce62826bf524ae0ab9fcde4db45566df9c2a2",
+      "expected": "Dites votre phrase à voix haute, sur votre travail.",
+      "transcribed": "Dites votre phrase à voix haute sur votre travail.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "sert-p5": {
+      "sha256": "5914d899387697cc32e4f29e3722b3f9dbdcc96ae28ec4554213b99584aad7f9",
+      "expected": "Pour demander une précision",
+      "transcribed": "Pour demander une précision,",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "forme-p5": {
+      "sha256": "09b8e40fae4d0c2337dd0be1c55e14ca4fea8478f891d2788aff91137cec6aad",
+      "expected": "Quelle est la différence avec<break time=\"0.45s\" />",
+      "transcribed": "Quelle est la différence avec ?",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "p5": {
+      "sha256": "e997e51aa464ab7f633ec80b16226158db6324ba7c4b1fa8586533a20c26d2a9",
+      "expected": "Quelle est la différence avec l'ancien système, du coup ?",
+      "transcribed": "Quelle est la différence avec l'ancien système du coup ?",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "avous-p5": {
+      "sha256": "4e33191235209fb26cef8d9a84fce62826bf524ae0ab9fcde4db45566df9c2a2",
+      "expected": "Dites votre phrase à voix haute, sur votre travail.",
+      "transcribed": "Dites votre phrase à voix haute sur votre travail.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "sert-p6": {
+      "sha256": "f946c07f3603ce8a9723a4ed6ae143d2f43f85a31257b80b24cf1c95a6904c99",
+      "expected": "Pour corriger poliment, à l'oral, on dit souvent c'est pas au lieu de ce n'est pas",
+      "transcribed": "Pour corriger poliment, à l'oral, on dit souvent ces « pas au lieu de ce n'est pas ».",
+      "word_error_rate": 0.1053,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "forme-p6": {
+      "sha256": "b2f791449499392e40d4a2cee316d8642bd8973d6877f0797bc7769419f09376",
+      "expected": "Ce n'est pas tout à fait la même chose<break time=\"0.45s\" />",
+      "transcribed": "Ce n'est pas tout à fait la même chose.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "p6": {
+      "sha256": "128fb288cdca1a878f54ca24450ebebf749590d60e80e488ac3f027bb70f49bf",
+      "expected": "Un devis et une facture, ce n'est pas tout à fait la même chose.",
+      "transcribed": "Un devis et une facture, ce n'est pas tout à fait la même chose.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "avous-p6": {
+      "sha256": "4e33191235209fb26cef8d9a84fce62826bf524ae0ab9fcde4db45566df9c2a2",
+      "expected": "Dites votre phrase à voix haute, sur votre travail.",
+      "transcribed": "Dites votre phrase à voix haute sur votre travail.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "interface-018": {
+      "sha256": "89e3ae0a40f104c01486aee845517f6ed62ed13ef9c5afac51df6fa89ef9ee44",
+      "expected": "Au travail",
+      "transcribed": "au travail.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "interface-019": {
+      "sha256": "8db6e2111b62418094ad0819544124322199f49fd120e4276424bb06e1c5645b",
+      "expected": "À vous",
+      "transcribed": "À vous !",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "etape-3-titre": {
+      "sha256": "ce715be0d1b6fa6ca20fb94d8af43d4ca117f3952db72e35252e135d68f945ec",
+      "expected": "Six phrases utiles.",
+      "transcribed": "six phrases utiles.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "etape-3-description": {
+      "sha256": "86462b5cf54ca68b8eafb9f2f0304ceb2a6e0fdac6d5385989cdcfc808028fe2",
+      "expected": "Des phrases de la vidéo pour mes réunions.",
+      "transcribed": "Des phrases de la vidéo pour mes réunions.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "melo-intro": {
+      "sha256": "86cd11b7e3e80a0e576355c27143e8ff290a057863c036f612eed67695d96c2a",
+      "expected": "Pour expliquer étape par étape, le français utilise la mélodie: à la fin de chaque étape, la voix monte. Cela veut dire: ce n'est pas fini, écoutez la suite.",
+      "transcribed": "Pour expliquer étape par étape, le français utilise la mélodie. À la fin de chaque étape, la voix monte. Cela veut dire, ce n'est pas fini, écoutez la suite.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "melo-regle-0": {
+      "sha256": "efc231af4cc0a23ac835a4b23c361d7e174aeaab4ef966573cb9d8bc6822e13c",
+      "expected": "Découpez votre explication en étapes courtes.",
+      "transcribed": "Découpez votre explication en étapes courtes.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "melo-regle-1": {
+      "sha256": "2d57126b58b17164fadc61bec11e5dfbe83dbf213b2f49d297ecdc0a522be514",
+      "expected": "À la fin de chaque étape, la voix monte: l'autre attend la suite.",
+      "transcribed": "À la fin de chaque étape, la voix monte. L'autre attend la suite.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "melo-regle-2": {
+      "sha256": "327b9c384daaf7f199b180cce382e40145855fbddffa131787182644b20ac0b0",
+      "expected": "À la dernière étape, la voix ne monte plus: l'explication est finie.",
+      "transcribed": "À la dernière étape, la voix ne monte plus. L'explication est finie.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "melo-attention": {
+      "sha256": "2741fdf9e4f2ab2d7c47477fb2db3fc292c7cae2ed4ba2a30e99793a2a51ecaa",
+      "expected": "Si votre voix descend à chaque étape, l'autre croit que vous avez fini… et il vous coupe la parole. Les flèches de cette page ont été placées d'après la voix réelle de la vidéo, mesurée.",
+      "transcribed": "Si votre voix descend à chaque étape, l'autre croit que vous avez fini et il vous coupe la parole. Les flèches de cette page ont été placées d'après la voix réelle de la vidéo. Mesurez.",
+      "word_error_rate": 0.027,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "melo-perception-0-consigne": {
+      "sha256": "758f9121ee379e80bbcf3f93df0f5b55adb4f95d7fc11610d24f9425cb258275",
+      "expected": "Le journaliste énumère quatre éléments. Écoutez: sur quelles syllabes la voix monte-t-elle nettement ? Cliquez sur les deux syllabes, puis vérifiez.",
+      "transcribed": "Le journaliste énumère quatre éléments. Écoutez. Sur quelles syllabes la voix monte-t-elle nettement ? Cliquez sur les deux syllabes, puis vérifiez.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "melo-perception-0-expl": {
+      "sha256": "5879a1c83cab22a0a2f16edd5b85550c68394a2ec445982f890458553cdfca56",
+      "expected": "La voix monte sur la dernière syllabe de différents et de différentes, les deuxième et troisième éléments de la liste: celle-ci continue. Au dernier élément, elle ne monte plus: la liste est finie.",
+      "transcribed": "La voix monte sur la dernière syllabe de différents et de différentes, les deuxièmes et troisièmes éléments de la liste. Celle-ci continue. Au dernier élément, elle ne monte plus. La liste est finie.",
+      "word_error_rate": 0.0588,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "melo-perception-1-consigne": {
+      "sha256": "b6034f79aaaa0bb95d2ddf1dc2ccd227ec87759692fa9affa5c5874ee973a477",
+      "expected": "Cette phrase explique trois étapes. Cliquez sur les deux syllabes où la voix monte, fin des deux premières étapes, puis vérifiez.",
+      "transcribed": "Cette phrase explique trois étapes. Cliquez sur les deux syllabes où la voix monte, fin des deux premières étapes, puis vérifiez.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "melo-perception-1-expl": {
+      "sha256": "a222455d23a566ef5420e6b4a48400ce1dc4310e880dea1784c0c9b494a73cb5",
+      "expected": "La voix monte sur borne et sur la dernière syllabe d’opérateur: l’explication continue. À la fin, sur voiture, elle ne monte plus.",
+      "transcribed": "La voix monte sur bornes et sur la dernière syllabe d'opérateur. L'explication continue. À la fin, sur voiture, elle ne monte plus.",
+      "word_error_rate": 0.0417,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "melo-etape-0": {
+      "sha256": "8e76e0050d5dc736697d1b99a57bdc7c12eba445724736daf638b0fc24350660",
+      "expected": "Écoutez la phrase deux fois.",
+      "transcribed": "Écoutez la phrase deux fois.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "melo-etape-1": {
+      "sha256": "8938e1b184beda8accc26f02d4805c672e469a6b23e5ad5a0765b467e94a510a",
+      "expected": "Parlez en même temps que la voix, deux fois.",
+      "transcribed": "parler en même temps que la voix, deux fois.",
+      "word_error_rate": 0.1111,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "melo-etape-2": {
+      "sha256": "ac7635853da813ab0a3f41d8cdaa09b009ec70b83a3de9364d13078ad9ab16d7",
+      "expected": "Enregistrez-vous, puis comparez les courbes.",
+      "transcribed": "Enregistrez-vous, puis comparez les courbes.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "legende-melodie-1": {
+      "sha256": "b97d8fa55e404b6944bd24f66fc5be4b06a44726413a206df6b04956b4d7c521",
+      "expected": "La flèche montante indique que la voix monte.",
+      "transcribed": "La flèche montante indique que la voie monte.",
+      "word_error_rate": 0.125,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "legende-melodie-2": {
+      "sha256": "460972325a4f085677bb199152e3daca617677871ecafbbb1a55546f40639bd7",
+      "expected": "La flèche descendante indique que la voix descend.",
+      "transcribed": "La flèche descendante indique que la voie descend.",
+      "word_error_rate": 0.125,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "legende-melodie-3": {
+      "sha256": "943258d35ccc31055dc435539c0cf589c8528edecae72aee56e9ea04bf2c2172",
+      "expected": "Le soulignement indique une syllabe plus longue.",
+      "transcribed": "Le soulignement indique une syllabe plus longue.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "legende-melodie-4": {
+      "sha256": "788e2fcd96734fe50dccd04e5adc3f15ef04b192692a41e9c7a0a2e9507c2042",
+      "expected": "La barre verticale marque la fin d’une étape.",
+      "transcribed": "La barre verticale marque la fin d'une étape.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "interface-020": {
+      "sha256": "4987a8e61bb7b1fd62906092ff27ac83296e333eb4b499fec8b3b358131a3e6c",
+      "expected": "La règle",
+      "transcribed": "la règle.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "interface-021": {
+      "sha256": "5cbd3eee335691ab075b9ad79167c54d0f4f7f8f55ebeb651b7980876bc10f40",
+      "expected": "Écoutez et trouvez",
+      "transcribed": "écouter et trouver.",
+      "word_error_rate": 0.6667,
+      "answer_possibly_disclosed": false,
+      "review_priority": "haute"
+    },
+    "interface-022": {
+      "sha256": "ef10ce7304889bb8e414810300ab4a32d9b2455efd4fb6f0c07d7e6348459238",
+      "expected": "Répétez comme dans la vidéo",
+      "transcribed": "Répétez comme dans la vidéo.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "etape-4-titre": {
+      "sha256": "59fc5951a03f77dd51ebd1c598dd697e559db6c1dfd9248b27f194b2a61c971b",
+      "expected": "La mélodie du français",
+      "transcribed": "La mélodie du français.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "etape-4-description": {
+      "sha256": "9930eeaded9cf44c9a8e45f1d7948154c6e8685b67ecea029a06cb88bb10c1f9",
+      "expected": "Je parle comme un francophone.",
+      "transcribed": "Je parle comme un francophone.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "titre-perception-1": {
+      "sha256": "b5552556e5a5d0f76472c5cc8da556ebc10d336f5100e14bcea3c7d4f2d1194b",
+      "expected": "Première phrase.",
+      "transcribed": "Première phrase.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "titre-perception-2": {
+      "sha256": "386bfc5a88ac5ba701609af26ee88388bf7b563e28938dbc95d0ab5c693fca95",
+      "expected": "Deuxième phrase.",
+      "transcribed": "Deuxième phrase.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "entrainement-consigne": {
+      "sha256": "a2ec504be94b39755e680c898235dc59a2037edcc5b13e0433f104679cd6bf44",
+      "expected": "Le même sujet, trois fois, de plus en plus court. Avant chaque essai, vous ajoutez une chose.",
+      "transcribed": "Le même sujet, trois fois, de plus en plus court. Avant chaque essai, vous ajoutez une chose.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "entrainement-preparation": {
+      "sha256": "67ed00d8000fe28ad93ed50e2e54350f49c943819dd049ca08ae0b5260360b93",
+      "expected": "Notez seulement des mots-clés, pas de phrases.",
+      "transcribed": "Notez seulement des mots-clés, pas de phrases.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "essai-1": {
+      "sha256": "3ce23cb7f47d815326a5c003b38cee8f3776b069055c1515f52cc5d29f864662",
+      "expected": "Expliquez avec vos notes.",
+      "transcribed": "expliquer avec vos notes.",
+      "word_error_rate": 0.25,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "essai-1-ajout": {
+      "sha256": "0ea7b45075fd51579d612e3bc43be8b0d914fe4f208e698ac2ab67af621ed79d",
+      "expected": "Pour l'essai deux, ajoutez: L'idée, c'est que… et Il suffit de…. Et faites monter la voix à la fin de chaque étape.",
+      "transcribed": "Pour laisser deux, ajoutez. L'idée, c'est que. Et il suffit de... Et faites monter la voix à la fin de chaque étape.",
+      "word_error_rate": 0.08,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "essai-2": {
+      "sha256": "9d56410e3259a37fa9f0423da802dc9dd726c33e3e5ee35e8a487d5e1212b70e",
+      "expected": "Votre formateur joue le collègue et vous pose une question. Répondez, puis vérifiez avec: On est bien d'accord que… ?",
+      "transcribed": "Votre formateur joue le collègue et vous pose une question. Répondez, puis vérifiez avec. On est bien d'accord que…",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "essai-2-ajout": {
+      "sha256": "0dfc77d073873795fc4747b26256a61ab60182699a87b33e5d954d92add92374",
+      "expected": "Pour l'essai trois, commencez votre réponse à la question par: Si j'ai bien compris, ….",
+      "transcribed": "Pour l'essai 3, commencez votre réponse à la question par « Si j'ai bien compris,",
+      "word_error_rate": 0.0625,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "essai-3": {
+      "sha256": "2e8a14e4380c0204ca76f204fbdcd910a47d28e23b8f50f8530149e7a5191138",
+      "expected": "Sans vos notes. Seulement l'essentiel.",
+      "transcribed": "sans vos notes. Seulement l'essentiel.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "obj-1": {
+      "sha256": "0081c87f374bdc7417da485b57c479ada820a29b11ba6bc090c70808e67f8ed6",
+      "expected": "Mais concrètement, je dois faire quoi ?",
+      "transcribed": "Mais concrètement, je dois faire quoi ?",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "obj-2": {
+      "sha256": "e997e51aa464ab7f633ec80b16226158db6324ba7c4b1fa8586533a20c26d2a9",
+      "expected": "Quelle est la différence avec l'ancien système, du coup ?",
+      "transcribed": "Quelle est la différence avec l'ancien système du coup ?",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "obj-3": {
+      "sha256": "fabb200825f7f4aa1cd2cf8994c9b632b2a966e53bdf2f730531bd7c3a95d7ea",
+      "expected": "Et si ça ne marche pas ?",
+      "transcribed": "Et si ça ne marche pas ?",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "obj-4": {
+      "sha256": "1546269b867c164e9aef2841f3fa91987ca4b1d9534da40913e170f363e787f7",
+      "expected": "Ça me semble être une usine à gaz, non ?",
+      "transcribed": "Ça me semble être une usine à gaz, non ?",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "interface-023": {
+      "sha256": "bcd86040a952b67674cb2cb23977fa917d62e3130a95e427cd79095635be038a",
+      "expected": "Préparez, une minute",
+      "transcribed": "Préparez une minute.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "interface-024": {
+      "sha256": "78a19b0d07a420efb16d83420066f304787ed3ee28f0fd2bf564963e9dc56b0e",
+      "expected": "Vos trois essais en chiffres",
+      "transcribed": "Vos trois essais en chiffres.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "etape-5-titre": {
+      "sha256": "8ee686fd7b9c002a492ee3f3bca3007fa5ce268911192d41d847e9577bcb669c",
+      "expected": "Je m'entraîne trois fois",
+      "transcribed": "Je m'entraîne trois fois.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "etape-5-description": {
+      "sha256": "5e90c0cfa670df3c7362d336b3afc7e505f4695a739465f832e1028174a1fbc2",
+      "expected": "Le même sujet, de plus en plus court.",
+      "transcribed": "Le même sujet de plus en plus court.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "titre-essai-1": {
+      "sha256": "4c6e880ccdfacb52b3106342aa5a13d48db82eb798696cd81b634fba443f944d",
+      "expected": "Premier essai.",
+      "transcribed": "Premier essai.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "titre-essai-2": {
+      "sha256": "266009068a136269cba1f626c825bb0790882a1486cf26cce2f4cb3df2826277",
+      "expected": "Deuxième essai.",
+      "transcribed": "Deuxième essai.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "titre-essai-3": {
+      "sha256": "b251fd431db4e3ff33d44fe6543d8a7f2c49e2da454718c553c960b7282171d0",
+      "expected": "Troisième essai.",
+      "transcribed": "Troisième essai.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "apres-consigne": {
+      "sha256": "5f105219a2dd1908c4b1d5445b5808e59a60ac865117d071d70be7192ac0f0d3",
+      "expected": "Le même sujet qu'au début. Parlez une minute, sans vos notes.",
+      "transcribed": "Le même sujet qu'au début. Parlez une minute sans vos notes.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "apres-bilan": {
+      "sha256": "b889ababafa531754a99ec8f69548c43d66efbc46c476344689d03dcee9e9034",
+      "expected": "Quelles phrases utiles avez-vous dites ? Réécoutez-vous et cochez.",
+      "transcribed": "Quelle phrase utile avez-vous dite ? Réécoutez-vous et cochez.",
+      "word_error_rate": 0.4,
+      "answer_possibly_disclosed": false,
+      "review_priority": "haute"
+    },
+    "interface-025": {
+      "sha256": "dd16b9e2c5de5c39f417e8beb6670f792f5c11a1e9b3c9be7d8e2a62c6768612",
+      "expected": "Début et fin du cours",
+      "transcribed": "Début et fin du cours",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "etape-6-titre": {
+      "sha256": "83af4c71ff42bf91f349d5196d879cfdc35c203b199a79116eee818f92a2f65c",
+      "expected": "Je reparle une minute",
+      "transcribed": "Je reparle une minute.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "etape-6-description": {
+      "sha256": "877bee91047b8490ae4e316c24287b82af49309a2a3fe890835ba1da6d2f175e",
+      "expected": "Je compare avec le début.",
+      "transcribed": "Je compare avec le début.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "objectif-consigne": {
+      "sha256": "8171d1470b222ca47e7b9928cee24ab749181f061ae59ad6696f4d48fc4b482d",
+      "expected": "Choisissez une phrase utile. Dites-la cette semaine, dans une vraie réunion ou un vrai appel.",
+      "transcribed": "Choisissez une phrase utile. Dites-la cette semaine dans une vraie réunion ou un vrai appel.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "semaine-1": {
+      "sha256": "428572f733603716abd9c37483a0a9c8287fe801d7bcbbc6590aa0285490ed5d",
+      "expected": "Jour un: Répétez les trois phrases de la mélodie avec la vidéo, en même temps que la voix, cinq minutes.",
+      "transcribed": "Jour 1. Répétez les trois phrases de la mélodie avec la vidéo en même temps que la voix. 5 minutes.",
+      "word_error_rate": 0.1,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "semaine-2": {
+      "sha256": "9118a85cef9ac45054fff582953aa3adbfb3bbdfe40636793e7944164e84febc",
+      "expected": "Jour deux: Dites les six phrases utiles sans regarder, bouton Vérifier sans regarder.",
+      "transcribed": "Jour 2. Dites les six phrases utiles sans regarder. Bouton vérifier sans regarder.",
+      "word_error_rate": 0.0769,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "semaine-3": {
+      "sha256": "2b9b1e643841e061c5fab8223d048d6114f5276d4a5fc699ec737b4de0cacf6d",
+      "expected": "Jour trois. En réunion, reformulez une fois: si j’ai bien compris<break time=\"0.45s\" />",
+      "transcribed": "Jour 3. En réunion, reformulez une fois, si j'ai bien compris.",
+      "word_error_rate": 0.0833,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "semaine-4": {
+      "sha256": "b6f97cbb206351ed1ab2b1039246bc196a4ad4aabdbaefcfa69f955cb22579ed",
+      "expected": "Jour quatre: Enregistrez une minute: expliquez un outil de votre travail, et envoyez-la à votre formateur.",
+      "transcribed": "Jour 4, enregistrez une minute, expliquez un outil de votre travail et envoyez-la à votre formateur.",
+      "word_error_rate": 0.0588,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "interface-026": {
+      "sha256": "5136271000ee3f7c376094a27b6942c169309b4ca6c85937f8fc23b4a6f4886c",
+      "expected": "Ma phrase de la semaine",
+      "transcribed": "Ma phrase de la semaine",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "interface-027": {
+      "sha256": "43217805361c625e5f6033b205a2a9515defeb2ad1f4fcb326093966bd94fccf",
+      "expected": "Quand ?",
+      "transcribed": "Quand...",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "interface-028": {
+      "sha256": "c682e23e23ed3b249e1d237367b7630877f447625b06aa9f3d9cc4e37ffc1469",
+      "expected": "Ma phrase exacte",
+      "transcribed": "ma phrase exacte.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "interface-029": {
+      "sha256": "352c440f9c04ee5cf6aa3fced663a51de523da8311263c4b5684891aca6396c4",
+      "expected": "dix minutes par jour, facultatif",
+      "transcribed": "10 minutes par jour, facultatif.",
+      "word_error_rate": 0.2,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "interface-030": {
+      "sha256": "35cdd1a7bac62a9c40929eb05e4266cd817324759400c4dc1fac18825bf9ab4e",
+      "expected": "Envoyer mon travail au formateur",
+      "transcribed": "Envoyer mon travail au formateur.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "interface-031": {
+      "sha256": "ccd4e6fe740a614766b4db654231a43cf7285cfcd34f51f27936782043d1e407",
+      "expected": "Vos réponses restent dans ce navigateur. Copiez-les et envoyez-les à votre formateur.",
+      "transcribed": "Vos réponses restent dans ce navigateur. Copiez-les et envoyez-les à votre formateur.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "interface-032": {
+      "sha256": "d985a3249eef7f3e3f51fc9a2dc2edf4d87da0b148102d26e385b7dd4efafcba",
+      "expected": "Pour aller plus loin, facultatif",
+      "transcribed": "pour aller plus loin, facultatif.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "interface-033": {
+      "sha256": "84bda386da488589a584f31771f05cd225f74010a1e700dcfe93b13d571d805d",
+      "expected": "Seulement après le cours, si vous voulez pratiquer davantage.",
+      "transcribed": "Seulement après le cours si vous voulez pratiquer davantage.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "etape-7-titre": {
+      "sha256": "7a6dad89c1f709426effefcc5859f0700d19aa63b32d46fd43a05f1512fc01be",
+      "expected": "Mon objectif de la semaine",
+      "transcribed": "Mon objectif de la semaine,",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "etape-7-description": {
+      "sha256": "7df527e6d65a97b6fdba2f854fe3426f4843942f793fb638628e7a18f31a983b",
+      "expected": "Une phrase à dire au travail.",
+      "transcribed": "Une phrase à dire au travail.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "lien-plus-loin-1": {
+      "sha256": "a58b96565a8fed4883fe104601c421bda1c31db073c3e5337bd318172febdb9e",
+      "expected": "Regarder la vidéo en entier. Durée: sept minutes.",
+      "transcribed": "Regardez la vidéo en entier. Durée 7 minutes.",
+      "word_error_rate": 0.25,
+      "answer_possibly_disclosed": false,
+      "review_priority": "haute"
+    },
+    "lien-plus-loin-2": {
+      "sha256": "70b097d4cc69ab25926b75e85b5b624963498216c800b2b409d560bd938efbef",
+      "expected": "Lire l'article d'Automobile Propre sur le Plug and Charge",
+      "transcribed": "lire l'article d'Automobile Propre sur le Plug & Charge.",
+      "word_error_rate": 0.0909,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "etape-8-titre": {
+      "sha256": "601303efa80c76d06e73deeff1c5f582219733d0c0c6be9fe59b5ba0be575db4",
+      "expected": "Espace formateur",
+      "transcribed": "espace formateur.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "interface-034": {
+      "sha256": "79108f9d1545998b1007d861d1cb706eeab7f6bc0b3f0ba2d6efb8040c43e657",
+      "expected": "Commencer",
+      "transcribed": "Commencez !",
+      "word_error_rate": 1.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "haute"
+    },
+    "interface-035": {
+      "sha256": "2120fa9f832c743eb72ffc4156be27fe6c683db417d9ebb7bd47cb79dfb74692",
+      "expected": "Retour",
+      "transcribed": "Retour.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "interface-036": {
+      "sha256": "68a2830c871a0dffb710349bbba7d3e2bce30789f405cb739e94c4d8d31db21f",
+      "expected": "Étape suivante",
+      "transcribed": "Étape suivante.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "interface-037": {
+      "sha256": "4962d4f280785b0196f6d05d48c16dbd37a9c07b8395b2bc4ae18ad28b438d91",
+      "expected": "Terminer le cours",
+      "transcribed": "Terminez le cours.",
+      "word_error_rate": 0.3333,
+      "answer_possibly_disclosed": false,
+      "review_priority": "haute"
+    },
+    "interface-038": {
+      "sha256": "6dc02d3affff32c8560fd03e6cd093f8d532c2b7fad0e561dcbd80075a44d414",
+      "expected": "Revenir au début",
+      "transcribed": "Revenir au début.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "interface-039": {
+      "sha256": "5fa5d830001264becee2760263f1cf9c584b096160b56824b6f70b3cdeb85a3e",
+      "expected": "Écouter",
+      "transcribed": "écoutez",
+      "word_error_rate": 1.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "haute"
+    },
+    "interface-040": {
+      "sha256": "6a04ee96822bb5aae9689083b004ee6c9826d21fe593e04705daabbd67276257",
+      "expected": "Arrêter",
+      "transcribed": "Arrêtez.",
+      "word_error_rate": 1.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "haute"
+    },
+    "interface-041": {
+      "sha256": "1d65de9e715b986d974d55758b5d776c8fede2d26b54134c8d3ac3b18db141a9",
+      "expected": "Un peu plus lent",
+      "transcribed": "Un peu plus lent.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "interface-042": {
+      "sha256": "d22c47d551c012897fe250ce70a036d2bbbf04bb3f7f42d589ca4af9acc65e10",
+      "expected": "En boucle",
+      "transcribed": "en boucle",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "interface-043": {
+      "sha256": "d01166b2d9a1f541e37aa4c052b89595fd1def72b8c58c78bfeed142370f8ae8",
+      "expected": "Vérifier",
+      "transcribed": "vérifier",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "interface-044": {
+      "sha256": "59388e9a281fe71a5c4a6bee161e088c15b3a21abf26800b576579ef3ee1e257",
+      "expected": "Voir la phrase",
+      "transcribed": "voir la phrase.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "interface-045": {
+      "sha256": "6d9ecfa2e6618b379737fd10da25026ba4963ed3d5bf2d6568a60326da7818e7",
+      "expected": "Je la connais",
+      "transcribed": "Je la connais.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "interface-046": {
+      "sha256": "2e5e41447963a2942d7163245c9317fc3f9d44e302ba63eacc6d037957cb6ba6",
+      "expected": "À revoir",
+      "transcribed": "A revoir.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "interface-047": {
+      "sha256": "dc198d14f390a3b20fa30fab6763af2b8f3b0e09f048f1c41b8e223b4c8a85ce",
+      "expected": "Démarrer",
+      "transcribed": "Démarrer.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "interface-048": {
+      "sha256": "9ea15a37d8e336449200f7fa42e32327c11427eb757718a22229d33690fcf92d",
+      "expected": "Pause",
+      "transcribed": "Pause.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "interface-049": {
+      "sha256": "1ba6ac270e7531793cd51a32a16f25cf16b238bba4713f01a3cd651a389f362b",
+      "expected": "Reprendre",
+      "transcribed": "Reprendre.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "interface-050": {
+      "sha256": "466a621c4ea700503522e91fa21f67618ad8feb32087eea9d9ece661008b228d",
+      "expected": "Réinitialiser",
+      "transcribed": "réinitialiser,",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "interface-051": {
+      "sha256": "d1987c83f6d5897189946a95765b979c51a4bebbfc0af535607e18c30f46f68c",
+      "expected": "Enregistrer",
+      "transcribed": "Enregistrez.",
+      "word_error_rate": 1.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "haute"
+    },
+    "interface-052": {
+      "sha256": "e93fc3d6f77bf847b7610f5b42d3bac81393fa3556623b4434a60384c955c7ae",
+      "expected": "Recommencer",
+      "transcribed": "recommencez",
+      "word_error_rate": 1.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "haute"
+    },
+    "interface-053": {
+      "sha256": "60b26bfcd0552c16bd7b9fa4fc613c1cb79ab1d80f6561c971707d8aa393f714",
+      "expected": "Le micro ne marche pas ?",
+      "transcribed": "Le micro ne marche pas.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "interface-054": {
+      "sha256": "b958ebb87bba3d5c049a0988da30e9b295f6b2b5eb58ecfbed3e0cf4b3dfa048",
+      "expected": "Télécharger, pour le formateur",
+      "transcribed": "Téléchargez pour le formateur.",
+      "word_error_rate": 0.25,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "interface-055": {
+      "sha256": "3daa580c97f26dfdf3e9689c932f4032b2fd4ddd77fefa8e9f38feb5b9cfc22a",
+      "expected": "Copier mes réponses",
+      "transcribed": "Copiez mes réponses.",
+      "word_error_rate": 0.3333,
+      "answer_possibly_disclosed": false,
+      "review_priority": "haute"
+    },
+    "interface-056": {
+      "sha256": "8361a2abac4f08efc4ea1cfd1048cd397781eb6131d595b4595dae8b14fc2a9d",
+      "expected": "Tout effacer",
+      "transcribed": "tout effacer",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "interface-057": {
+      "sha256": "aa2a8b6dd7e53b20d27ea20cbd7d846b3e1608142598f6cee416b78c8eee82e1",
+      "expected": "Le lecteur ne s'ouvre pas ici.",
+      "transcribed": "le lecteur ne s'ouvre pas ici",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "interface-058": {
+      "sha256": "c598d5574eb00ed8d71e6e8d7c4204d62901cfabe5b2783dced250ea7e055162",
+      "expected": "La vidéo ne démarre pas.",
+      "transcribed": "La vidéo ne démarre pas.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "interface-059": {
+      "sha256": "2c3b328a87d1057554c51157840049230dde41e6c2e0bab7913920c0d66ce878",
+      "expected": "L'audio ne peut pas être chargé.",
+      "transcribed": "L'audio ne peut pas être chargé.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "interface-060": {
+      "sha256": "2daa57135fb3b525af695a5c3a9110198371a50f2a67368fe4034825fe8d4ca8",
+      "expected": "Dites la phrase une fois, puis cliquez sur Arrêter.",
+      "transcribed": "Dites la phrase une fois, puis cliquez sur « Arrêter ».",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "interface-061": {
+      "sha256": "3f05f84e66f7a2c0c665a86087bd22fc90199833528ddefda4f2768747b5edc8",
+      "expected": "Parlez sans vous arrêter. Les erreurs ne sont pas un problème.",
+      "transcribed": "Parlez sans vous arrêter. Les erreurs ne sont pas un problème.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "interface-062": {
+      "sha256": "97da4bf27159a35e8e671400b2db14f8ddbdbd545f5be0a6594dcf73c7162507",
+      "expected": "Je n'entends rien. Vérifiez le micro, puis recommencez.",
+      "transcribed": "Je n'entends rien. Vérifiez le micro, puis recommencez.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "interface-063": {
+      "sha256": "58712b8b96af8f8dfbda8b088497077f2e493306212fc66dc6cf16ce8f2d049d",
+      "expected": "Le son est faible ou il y a du bruit: ces chiffres sont approximatifs.",
+      "transcribed": "Le son est faible ou il y a du bruit. Ces chiffres sont approximatifs.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "interface-064": {
+      "sha256": "7f1148778dd9dad161f1deff985ff8e9d8db5c5d0b88c505e27fd8527578961b",
+      "expected": "Vos chiffres sont gardés. Le son, lui, disparaît quand vous fermez la page.",
+      "transcribed": "Vos chiffres sont gardés. Le son, lui, disparaît quand vous fermez la page.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "interface-065": {
+      "sha256": "1b59d114bf520f9e496dd822ec68da47e2acaee6c54537d9548044f5a83f45df",
+      "expected": "C'est fini. Réécoutez-vous une fois.",
+      "transcribed": "C'est fini. Réécoutez-vous une fois.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "interface-066": {
+      "sha256": "cdcc8a61d139f7f86b98a09b233c9fba9d62b99901488464439a46040bd4f4f0",
+      "expected": "Ce navigateur ne peut pas enregistrer. Utilisez le dictaphone de votre téléphone.",
+      "transcribed": "Ce navigateur ne peut pas enregistrer. Utilisez le dictaphone de votre téléphone.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    },
+    "interface-067": {
+      "sha256": "6d325480ebb648f26096f57bdeb68c06cd3aaacb13c7dd000da20dd722cd8c25",
+      "expected": "Le micro est bloqué. Cliquez sur l'icône à gauche de l'adresse du site et autorisez le micro, puis recommencez. Ou utilisez le dictaphone de votre téléphone.",
+      "transcribed": "Le micro est bloqué. Cliquez sur l'icône à gauche de l'adresse du site et autorisez le micro, puis recommencez. Ou utilisez le dictaphone de votre téléphone.",
+      "word_error_rate": 0.0,
+      "answer_possibly_disclosed": false,
+      "review_priority": "normale"
+    }
+  }
+}

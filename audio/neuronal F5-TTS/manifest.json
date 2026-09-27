@@ -1,0 +1,84 @@
+{
+  "parameters": {
+    "engine": "f5-tts",
+    "model_config": "F5TTS_Base",
+    "device": "mps",
+    "nfe_step": 32,
+    "reference_sha256": "3ec6dc37076950d5e4e36b44bff807e3caafa1ec80113138b9b4ac472eb6d551",
+    "reference_text": "D'un point de vue technique, c'est-à-dire si on regarde la technique. Pourquoi cet extrait ? Le journaliste reformule pour vérifier qu'il a compris, puis pose une question. Vous allez faire la même chose.",
+    "checkpoint_sha256": "812347d5dcd375e5d84fd3cb156468ca4ee99bd6fbe29d86f487a3c964b69e34",
+    "vocab_sha256": "2a05f992e00af9b0bd3800a8d23e78d520dbd705284ed2eedb5f4bd29398fa3c"
+  },
+  "clips": {
+    "p1": {
+      "key": "bd151502294589e21e966046bf5c9180b26e2ab6edf5cefc45c4ef122cd872f5",
+      "text": "L'idée, c'est que chaque client signe en ligne, sans imprimer le contrat.",
+      "role": "phrase_modele",
+      "status": "non_valide_a_l_ecoute",
+      "sha256": "2214ec2d521a749ae67c7fa1e99fd04e64cd7fd9e473d4c9e0159b04e0019eba"
+    },
+    "intro-consigne": {
+      "key": "8530926a59fdbb02abfc73e6b69658fd18776089e26598b27c13a0a165e532db",
+      "text": "Aujourd'hui, vous apprenez à expliquer quelque chose de compliqué avec des mots simples, puis à vérifier que l'autre a bien compris. En une minute, sans chercher vos mots.",
+      "role": "accueil",
+      "status": "non_valide_a_l_ecoute",
+      "sha256": "163d9d8e4a99b2f4731254160dee28db75040fbbf73c87c5d88d402efc1141aa"
+    },
+    "sit-dialogue": {
+      "key": "f22ce10b9e86dc2086fed706956872a0b561b9bf54469a539f471d13e3945858",
+      "text": "On m'a parlé du nouvel outil de signature électronique. Tu peux m'expliquer simplement comment ça marche?",
+      "role": "question_ouverte",
+      "status": "non_valide_a_l_ecoute",
+      "sha256": "674217de106758db2c15d55743bcaa0a9b38453cf30c739486b3cc25502a60a8"
+    },
+    "sit-mission": {
+      "key": "8572283c3a0b5071e729b5b2314787a3ab89943415b10217bd777d931e743faf",
+      "text": "Vous connaissez bien cet outil. Expliquez simplement, étape par étape, puis vérifiez qu'il a bien compris.",
+      "role": "situation",
+      "status": "non_valide_a_l_ecoute",
+      "sha256": "498f8994d1c7d741f2658ac361c20f5ab4f515032e5fac4d5015241837404e9f"
+    },
+    "sit-consigne": {
+      "key": "70c018c285b9d8f8475c395f1fd4288312b4b9eb039ddbcf19c142aad3bbd45f",
+      "text": "Expliquez-lui. En une minute.",
+      "role": "consigne",
+      "status": "non_valide_a_l_ecoute",
+      "sha256": "42cc35db9e63d9e8d824d53a5addc2cb5acca8a0b61146899d5e694fc68bff29"
+    },
+    "sit-perso-question": {
+      "key": "8f0e374ab2d7ba9bb1c053f91129daddd9908f34d04dae7a7130f4eab29b3bfd",
+      "text": "Vous préférez un sujet de votre travail? Dans votre entreprise, qu'est-ce que vous pourriez expliquer à un nouveau collègue?",
+      "role": "question_ouverte",
+      "status": "non_valide_a_l_ecoute",
+      "sha256": "fe0d1c983707309b4fca5e382280b177b05760787b1aa1bcbeefa9a0ed9aaaba"
+    },
+    "plan-1": {
+      "key": "fee2f070fc28bc4082523fc17a309f666740d407ebd2ba815493dba4ccbfe7ac",
+      "text": "Le principe. Phrase utile: L'idée, c'est que<break time=\"0.45s\" />",
+      "role": "fragment_inacheve",
+      "status": "non_valide_a_l_ecoute",
+      "sha256": "211e462d53d138154e3a66f31845170ff7e95459228f426608afdcfaae81601e"
+    },
+    "plan-2": {
+      "key": "b761c1788929803491e57098ab79e4a8c0c556ad9e6fbfb61e8416f5bcb2692c",
+      "text": "Comment faire. Phrase utile: Il suffit de<break time=\"0.45s\" />",
+      "role": "fragment_inacheve",
+      "status": "non_valide_a_l_ecoute",
+      "sha256": "46839d47533a6a3d8d5018f5d075741223e86c31daa87fd6fb273fa5abbf3e67"
+    },
+    "plan-3": {
+      "key": "354762e5d8f4157f12dd30aaa10d04f9fe1e668d64d67a6daecce484651f0f2e",
+      "text": "Une différence. Phrase utile: Ce n'est pas tout à fait la même chose que<break time=\"0.45s\" />",
+      "role": "fragment_inacheve",
+      "status": "non_valide_a_l_ecoute",
+      "sha256": "2d9dc4b12dfc21d3dd889e3750a0860dcb9190c67f862ffecf04dd1e879db4e6"
+    },
+    "plan-4": {
+      "key": "f1b9899364c3fe813c9ebdc481f1db7f4fdcf4ed4b64ef071971ad9232517f3b",
+      "text": "Vérifier. Phrase utile: On est bien d'accord que<break time=\"0.45s\" />",
+      "role": "fragment_inacheve",
+      "status": "non_valide_a_l_ecoute",
+      "sha256": "d99b3e3e7ed9f5f7ca4c99d8561e69ccfdce52ad888aad44df0c12e811d79520"
+    }
+  }
+}

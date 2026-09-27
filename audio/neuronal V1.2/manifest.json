@@ -1,0 +1,260 @@
+{
+  "model": "tts_models/multilingual/multi-dataset/xtts_v2",
+  "package": "coqui-tts 0.27.5",
+  "device": "cpu",
+  "reference": "reference.wav",
+  "reference_sha256": "0eb4cca9912d8c381da55d68f3dd02f1a3313642d9b50fceb83132551fb07da2",
+  "source": "../neuronal/ (Gemini 3.8 Flash TTS, voix Puck)",
+  "clips": {
+    "p1": {
+      "sha256": "784288395c2ad4934fbb28f65548b6494bd710a1ed024fed4783fef95ca35f62",
+      "text": "L'idée, c'est que chaque client signe en ligne, sans imprimer le contrat.",
+      "file": "p1.mp3"
+    },
+    "avant-consigne": {
+      "sha256": "2cf29faac24f01f2becc4a918969a6aa7c3b8ae3d2240d97b8593caab40cd5e2",
+      "text": "Donnez votre avis sur le sujet, sans préparer. Les erreurs ne sont pas un problème. À la fin du cours, vous parlerez encore 1 minute : vous verrez la différence.",
+      "spoken_text": "Donnez votre avis sur le sujet, sans préparer. Les erreurs ne sont pas un problème. À la fin du cours, vous parlerez encore 1 minute: vous verrez la différence.",
+      "file": "avant-consigne.mp3"
+    },
+    "diff-a": {
+      "sha256": "c04d72bbe9fb6b00d17d07cc9c35fe6cc192ead8e03783b894881a608df2effa",
+      "text": "Anglais, sigle et chiffres arrivent très vite : « Plug and Charge, ou plutôt, d'un point de vue technique, ISO 15118 ». Pas besoin de tout comprendre. Retenez l'expression utile : d'un point de vue technique (= si on regarde la technique).",
+      "spoken_text": "Anglais, sigle et chiffres arrivent très vite: Plug and Charge, ou plutôt, d'un point de vue technique, ISO 15118. Pas besoin de tout comprendre. Retenez l'expression utile: d'un point de vue technique, c'est-à-dire si on regarde la technique.",
+      "file": "diff-a.mp3"
+    },
+    "diff-b": {
+      "sha256": "5531457105eacec6aa03b1a4983ec53a52f5e328a8332ecf4c008b87849cdfe1",
+      "text": "« Ça me semble être une usine à gaz absolument extraordinaire. À quel point c'est un challenge pour Chargemap, du coup ? » Du coup = donc : à l'oral, on l'entend partout. Un challenge = un défi (mot anglais très utilisé en entreprise).",
+      "spoken_text": "Ça me semble être une usine à gaz absolument extraordinaire. À quel point c'est un challenge pour Chargemap, du coup? Du coup veut dire donc: à l'oral, on l'entend partout. Un challenge veut dire un défi, mot anglais très utilisé en entreprise.",
+      "file": "diff-b.mp3"
+    },
+    "ecoute-a-devine": {
+      "sha256": "8fbdfafcd6a4d4b0b4307c4bf93d6a0e42505c85b305b118f4e9bdf442c69189",
+      "text": "« Plug » = brancher, « charge » = recharger. À votre avis, que fait le Plug & Charge quand on branche une voiture électrique ? Répondez à voix haute.",
+      "spoken_text": "Plug veut dire brancher, charge veut dire recharger. À votre avis, que fait le Plug & Charge quand on branche une voiture électrique? Répondez à voix haute.",
+      "file": "ecoute-a-devine.mp3"
+    },
+    "ecoute-b-devine": {
+      "sha256": "3ae529e7703d872469e83780eb8ea7b46db3000ee7911412dc00cbea631cae3a",
+      "text": "Le journaliste pense que, derrière cette simplicité, le système est très compliqué. À votre avis, pourquoi ? Répondez à voix haute.",
+      "spoken_text": "Le journaliste pense que, derrière cette simplicité, le système est très compliqué. À votre avis, pourquoi? Répondez à voix haute.",
+      "file": "ecoute-b-devine.mp3"
+    },
+    "essai-1": {
+      "sha256": "c139a3a8106c4d79ba2be0ab151e759aa985e99e24f37f41f4c46f2b16b14415",
+      "text": "Expliquez avec vos notes. Pour l'essai 2, ajoutez : « L'idée, c'est que… » et « Il suffit de… ». Et faites monter la voix à la fin de chaque étape.",
+      "spoken_text": "Expliquez avec vos notes. Pour l'essai 2, ajoutez: L'idée, c'est que… et Il suffit de…. Et faites monter la voix à la fin de chaque étape.",
+      "file": "essai-1.mp3"
+    },
+    "essai-2": {
+      "sha256": "71741cde90407b232ec7f7f73c4df69ea81076b081fa6af0b9ab126aff11d885",
+      "text": "Votre formateur joue le collègue et vous pose une question. Répondez, puis vérifiez avec : « On est bien d'accord que… ? » Pour l'essai 3, commencez votre réponse à la question par : « Si j'ai bien compris, … ».",
+      "spoken_text": "Votre formateur joue le collègue et vous pose une question. Répondez, puis vérifiez avec: On est bien d'accord que…? Pour l'essai 3, commencez votre réponse à la question par: Si j'ai bien compris, ….",
+      "file": "essai-2.mp3"
+    },
+    "essai-3": {
+      "sha256": "7b144302fb999fc9c9191db4eab38d49a855fbcc03c2c27876ce70060e7125a2",
+      "text": "Sans vos notes. Seulement l'essentiel.",
+      "file": "essai-3.mp3"
+    },
+    "forme-p1": {
+      "sha256": "42a36040ac30770c6da4729197a41d5d4761fcaf3984230d34934c3ac70f5c53",
+      "text": "L'idée, c'est que…",
+      "file": "forme-p1.mp3"
+    },
+    "forme-p2": {
+      "sha256": "23c7c65af6ea3a231a0675c7d0356f83ee15fca591793bbc6b4f15c0a063ed77",
+      "text": "Il suffit de…",
+      "file": "forme-p2.mp3"
+    },
+    "forme-p3": {
+      "sha256": "48755180397601aa893398af94a85a87ba5c85e66513ec187261b1b887ad5390",
+      "text": "Si j'ai bien compris, …",
+      "file": "forme-p3.mp3"
+    },
+    "forme-p4": {
+      "sha256": "34045015a9681e9e7af55f534f0344746ee0a0da3f5f98bf993e494c74a8da23",
+      "text": "On est bien d'accord que… ?",
+      "spoken_text": "On est bien d'accord que…?",
+      "file": "forme-p4.mp3"
+    },
+    "forme-p5": {
+      "sha256": "cae246b99b8a63351d55bea9686ca740365e25327a949fafe78dbd2be2a37415",
+      "text": "Quelle est la différence avec… ?",
+      "spoken_text": "Quelle est la différence avec…?",
+      "file": "forme-p5.mp3"
+    },
+    "forme-p6": {
+      "sha256": "95285f1358ec31903a12d1b6f64d73bb1d7ae854e4d2468f9e3b6747b6a7cafa",
+      "text": "Ce n'est pas tout à fait la même chose.",
+      "file": "forme-p6.mp3"
+    },
+    "gap-a-0-sol": {
+      "sha256": "b51b04d3868283de5537912c9036ef03aa17f001537988bce0c55b99a965eaf7",
+      "text": "C'est un nouveau protocole de communication entre, d'un côté, le véhicule et, de l'autre, les bornes.",
+      "file": "gap-a-0-sol.mp3"
+    },
+    "gap-a-1-sol": {
+      "sha256": "b5f7295a72d688a44b5b7d4e27289d6edcead2a3e60566b1db5c4d0148aa3f18",
+      "text": "C'est une expérience beaucoup plus fluide de recharge.",
+      "file": "gap-a-1-sol.mp3"
+    },
+    "gap-b-0-sol": {
+      "sha256": "8ecc7ab0c3a48e457148ce254a9fade10bcb5eaa9e1a8427dbc2e0a68d0c79dd",
+      "text": "Parce que, si j'ai bien compris , il faut que la voiture discute avec la borne.",
+      "spoken_text": "Parce que, si j'ai bien compris, il faut que la voiture discute avec la borne.",
+      "file": "gap-b-0-sol.mp3"
+    },
+    "gap-b-1-sol": {
+      "sha256": "e3b1ed63d72b6bddb8a91ef2ca5981d2c0b913d7b1c4e81a1cbef9f0c3d585f8",
+      "text": "Ça me semble être une usine à gaz absolument extraordinaire.",
+      "file": "gap-b-1-sol.mp3"
+    },
+    "intro-consigne": {
+      "sha256": "ba9a8ef56e4deabe87e0ccd2274bdbf952ec3944f95926f0a6e88ae11d6af2e6",
+      "text": "Expliquer simplement… et vérifier qu'on s'est compris. Aujourd'hui, vous apprenez à expliquer quelque chose de compliqué avec des mots simples, puis à vérifier que l'autre a bien compris. En 1 minute, sans chercher vos mots.",
+      "file": "intro-consigne.mp3"
+    },
+    "melo-regle": {
+      "sha256": "c83ed2cf0318b0b8138abf0321493ab566808008e76db27ef6372ef151e0589b",
+      "text": "Découpez votre explication en étapes courtes. À la fin de chaque étape, la voix monte : l'autre attend la suite. À la dernière étape, la voix ne monte plus : l'explication est finie.",
+      "spoken_text": "Découpez votre explication en étapes courtes. À la fin de chaque étape, la voix monte: l'autre attend la suite. À la dernière étape, la voix ne monte plus: l'explication est finie.",
+      "file": "melo-regle.mp3"
+    },
+    "obj-1": {
+      "sha256": "596f01a9db054aa6dae08be3187ea99547e7afabea510484d54fe99fa678ee92",
+      "text": "Mais concrètement, je dois faire quoi ?",
+      "spoken_text": "Mais concrètement, je dois faire quoi?",
+      "file": "obj-1.mp3"
+    },
+    "obj-2": {
+      "sha256": "eb3576a4edefc2d1bd41a1b87e1c1d8288ff054f4942c78621179834feeee962",
+      "text": "Quelle est la différence avec l'ancien système, du coup ?",
+      "spoken_text": "Quelle est la différence avec l'ancien système, du coup?",
+      "file": "obj-2.mp3"
+    },
+    "obj-3": {
+      "sha256": "f1deaf0fe220c12fd3ee5590bdd9e3a6cc610485796f7cb47430b07af2e223b7",
+      "text": "Et si ça ne marche pas ?",
+      "spoken_text": "Et si ça ne marche pas?",
+      "file": "obj-3.mp3"
+    },
+    "obj-4": {
+      "sha256": "4f72fe04e1198aea33f03c7da7e438cab9440b13ec6fec9bdfd8224ee686fb38",
+      "text": "Ça me semble être une usine à gaz, non ?",
+      "spoken_text": "Ça me semble être une usine à gaz, non?",
+      "file": "obj-4.mp3"
+    },
+    "p2": {
+      "sha256": "3c6ef74b5541366b8258710d9c5dd94f8927e5e8375586db87c9c8632f2c07f7",
+      "text": "Il suffit d'ouvrir le document, de cliquer sur « Signer », et c'est fini.",
+      "spoken_text": "Il suffit d'ouvrir le document, de cliquer sur Signer, et c'est fini.",
+      "file": "p2.mp3"
+    },
+    "p3": {
+      "sha256": "196737b393fac7aea43398ce76bef36ae4a5854f4a9d877c6beeac3b3eccb688",
+      "text": "Si j'ai bien compris, le client signe en ligne, et nous recevons le contrat tout de suite.",
+      "file": "p3.mp3"
+    },
+    "p4": {
+      "sha256": "ed6244e3efbbd4d645a3b41200cc501ba22a940eed6c3db6c3cce3c76894761f",
+      "text": "On est bien d'accord que je signe une seule fois, et que le client reçoit une copie ?",
+      "spoken_text": "On est bien d'accord que je signe une seule fois, et que le client reçoit une copie?",
+      "file": "p4.mp3"
+    },
+    "p5": {
+      "sha256": "eb3576a4edefc2d1bd41a1b87e1c1d8288ff054f4942c78621179834feeee962",
+      "text": "Quelle est la différence avec l'ancien système, du coup ?",
+      "spoken_text": "Quelle est la différence avec l'ancien système, du coup?",
+      "file": "p5.mp3"
+    },
+    "p6": {
+      "sha256": "fe9f5eb57b3196531ffbfcf8605bc10de7c1fafe2cea4f7f238c029e04650878",
+      "text": "Un devis et une facture, ce n'est pas tout à fait la même chose.",
+      "file": "p6.mp3"
+    },
+    "q-a-0": {
+      "sha256": "bcdefe936a74ad0491f2fc5649ffa77fbcf94b05043784f93acbde2545bfd50f",
+      "text": "Avec le Plug & Charge, que se passe-t-il quand on branche la voiture ? Il faut payer avec une carte bancaire. La recharge démarre toute seule, sans carte. Il faut appeler l'opérateur.",
+      "spoken_text": "Avec le Plug & Charge, que se passe-t-il quand on branche la voiture? Il faut payer avec une carte bancaire. La recharge démarre toute seule, sans carte. Il faut appeler l'opérateur.",
+      "file": "q-a-0.mp3"
+    },
+    "q-a-0-expl": {
+      "sha256": "5e13be5ad570549c20d9a652d6c9d3586736de077c36bbd23b4df4a1f2dcf747",
+      "text": "La borne récupère l'identifiant installé dans la voiture, demande l'autorisation, et « la charge démarre » sans passer de carte.",
+      "spoken_text": "La borne récupère l'identifiant installé dans la voiture, demande l'autorisation, et la charge démarre sans passer de carte.",
+      "file": "q-a-0-expl.mp3"
+    },
+    "q-a-1": {
+      "sha256": "458a571a2c21cea31bf85b8cfd6e6fb74eeed0beaf4a9c3e213db8cb9c92a540",
+      "text": "Selon lui, cette recharge est plus… chère et plus lente. compliquée, mais plus rapide. simple et plus sûre.",
+      "file": "q-a-1.mp3"
+    },
+    "q-a-1-expl": {
+      "sha256": "8d5b98877dc46a959835c089888dd72a632c9cf6592f9aedbcb5e9532a91a446",
+      "text": "« Une expérience beaucoup plus fluide de recharge, et beaucoup plus intéressante d'un point de vue sécurité. »",
+      "spoken_text": "Une expérience beaucoup plus fluide de recharge, et beaucoup plus intéressante d'un point de vue sécurité.",
+      "file": "q-a-1-expl.mp3"
+    },
+    "q-b-0": {
+      "sha256": "a4b5ab8979b6df4041c4b4c755781a75678eee29be8eadac506bd7b0cef68f3f",
+      "text": "Pourquoi le journaliste pense-t-il que c'est compliqué ? Parce que les voitures électriques sont lentes. Parce qu'il y a des bornes, des réseaux, des marques et des modèles de voitures différents. Parce que l'application est payante.",
+      "spoken_text": "Pourquoi le journaliste pense-t-il que c'est compliqué? Parce que les voitures électriques sont lentes. Parce qu'il y a des bornes, des réseaux, des marques et des modèles de voitures différents. Parce que l'application est payante.",
+      "file": "q-b-0.mp3"
+    },
+    "q-b-0-expl": {
+      "sha256": "78c3fd011c25b2d164c68702877b4bae3c5c6741bfcde55718c063e7108dcee6",
+      "text": "« Il y a des bornes qui sont différentes, des réseaux de recharge différents, des marques de voitures différentes, des modèles de voitures différents. »",
+      "spoken_text": "Il y a des bornes qui sont différentes, des réseaux de recharge différents, des marques de voitures différentes, des modèles de voitures différents.",
+      "file": "q-b-0-expl.mp3"
+    },
+    "q-b-1": {
+      "sha256": "4fab171e57c824bfff79988aa33561e39cb804cd75882d98fc2527a5a2dd7c88",
+      "text": "Que veut dire « une usine à gaz » ici ? Une usine qui produit du gaz. Un système beaucoup trop compliqué. Une borne de recharge.",
+      "spoken_text": "Que veut dire une usine à gaz ici? Une usine qui produit du gaz. Un système beaucoup trop compliqué. Une borne de recharge.",
+      "file": "q-b-1.mp3"
+    },
+    "q-b-1-expl": {
+      "sha256": "bbe79005e76257dfeb78ac58fc3d247c1c90aa5e101a856e191056fbd231573b",
+      "text": "Une usine à gaz = un système trop compliqué. Une expression très courante au bureau.",
+      "spoken_text": "Une usine à gaz veut dire un système trop compliqué. Une expression très courante au bureau.",
+      "file": "q-b-1-expl.mp3"
+    },
+    "semaine-1": {
+      "sha256": "7fb91e5ea7c1106cc238eb814f7d43d3dfdb004367796479443f376cb1d70b4c",
+      "text": "Répétez les 3 phrases de la mélodie avec la vidéo, en même temps que la voix (5 minutes).",
+      "spoken_text": "Répétez les 3 phrases de la mélodie avec la vidéo, en même temps que la voix, 5 minutes.",
+      "file": "semaine-1.mp3"
+    },
+    "semaine-2": {
+      "sha256": "5e8618609465a5281e5e77e4e14cd8bcba3d71b0dcd0064f9dda6c4ad15b4e38",
+      "text": "Dites les 6 phrases utiles sans regarder (bouton « Vérifier sans regarder »).",
+      "spoken_text": "Dites les 6 phrases utiles sans regarder, bouton Vérifier sans regarder.",
+      "file": "semaine-2.mp3"
+    },
+    "semaine-3": {
+      "sha256": "67ba7fe9c13026080cdb6636144c8b2ee8f7b65c02b27306d9a2ff1ff262d3aa",
+      "text": "En réunion, reformulez une fois : « Si j'ai bien compris, … ».",
+      "spoken_text": "En réunion, reformulez une fois: Si j'ai bien compris, ….",
+      "file": "semaine-3.mp3"
+    },
+    "semaine-4": {
+      "sha256": "f9201360845e6f6ba669edeef370e27be75ee7b2531157b5f328c8970e41dba4",
+      "text": "Enregistrez 1 minute : expliquez un outil de votre travail, et envoyez-la à votre formateur.",
+      "spoken_text": "Enregistrez 1 minute: expliquez un outil de votre travail, et envoyez-la à votre formateur.",
+      "file": "semaine-4.mp3"
+    },
+    "sit-dialogue": {
+      "sha256": "4c1fb26f572b657229fa698ce00193ec56f7dec44d0669ffb1a085d35b3fcd9e",
+      "text": "« On m'a parlé du nouvel outil de signature électronique. Tu peux m'expliquer simplement comment ça marche ? »",
+      "spoken_text": "On m'a parlé du nouvel outil de signature électronique. Tu peux m'expliquer simplement comment ça marche?",
+      "file": "sit-dialogue.mp3"
+    },
+    "sit-mission": {
+      "sha256": "10311c727fab274dfa47b1b47758070a5edb38134f49f9f62f134e153db5c227",
+      "text": "Vous connaissez bien cet outil. Expliquez simplement, étape par étape, puis vérifiez qu'il a bien compris.",
+      "file": "sit-mission.mp3"
+    }
+  }
+}

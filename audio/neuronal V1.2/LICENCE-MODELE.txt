@@ -1,0 +1,6 @@
+Les fichiers MP3 de ce dossier ont été produits avec le modèle Coqui XTTS-v2.
+Le modèle et ses sorties sont soumis à la Coqui Public Model License 1.0.0 :
+https://huggingface.co/coqui/XTTS-v2/blob/main/LICENSE.txt
+
+Cette licence limite l'utilisation aux fins non commerciales. Vérifiez les droits
+avant toute diffusion dans une formation payante ou financée par subvention.

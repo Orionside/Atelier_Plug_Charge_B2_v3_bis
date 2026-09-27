@@ -1,0 +1,103 @@
+{
+  "clips": {
+    "p1": {
+      "sha256": "7594c12a37ca9cbc15a65da8838d0261b4779e26373eb273232dbb1bc3750093",
+      "text": "L'idée, c'est que chaque client signe en ligne, sans imprimer le contrat.",
+      "file": "audio/gemini/p1.mp3",
+      "model": "gemini-3.8-flash-tts",
+      "voice": "fr-fr-tutor-5",
+      "style": "Français de France naturel, voix chaleureuse et claire, débit conversationnel posé."
+    },
+    "intro-consigne": {
+      "sha256": "4bb82fb0ac9575ed5c7bcfe7c78404a5fd8367283bec0cb0e0bdd357ba1396f6",
+      "text": "Aujourd'hui, vous apprenez à expliquer quelque chose de compliqué avec des mots simples, puis à vérifier que l'autre a bien compris. En 1 minute, sans chercher vos mots.",
+      "file": "audio/gemini/intro-consigne.mp3",
+      "model": "gemini-3.8-flash-tts",
+      "voice": "fr-fr-tutor-5",
+      "style": "Français de France naturel, voix chaleureuse et claire, débit conversationnel posé."
+    },
+    "sit-dialogue": {
+      "sha256": "1436c8b80c16446f4852aca94d565818dd90475c0db3a5e0b6149feb6f00f6bd",
+      "text": "« On m'a parlé du nouvel outil de signature électronique. Tu peux m'expliquer simplement comment ça marche ? »",
+      "file": "audio/gemini/sit-dialogue.mp3",
+      "model": "gemini-3.8-flash-tts",
+      "voice": "fr-fr-tutor-5",
+      "style": "Français de France naturel, voix chaleureuse et claire, débit conversationnel posé."
+    },
+    "sit-mission": {
+      "sha256": "f2bcdca8b30af0d066578012f28d3ee681469836d840be6e7e5dce504156ec9b",
+      "text": "Vous connaissez bien cet outil. Expliquez simplement, étape par étape, puis vérifiez qu'il a bien compris.",
+      "file": "audio/gemini/sit-mission.mp3",
+      "model": "gemini-3.8-flash-tts",
+      "voice": "fr-fr-tutor-5",
+      "style": "Français de France naturel, voix chaleureuse et claire, débit conversationnel posé."
+    },
+    "sit-consigne": {
+      "sha256": "f04f030a32c4f882afed9d56c7afdba5d3f4c7332ab281cefda5cceb85890a24",
+      "text": "Expliquez-lui. En 1 minute.",
+      "file": "audio/gemini/sit-consigne.mp3",
+      "model": "gemini-3.8-flash-tts",
+      "voice": "fr-fr-tutor-5",
+      "style": "Français de France naturel, voix chaleureuse et claire, débit conversationnel posé."
+    },
+    "sit-perso-question": {
+      "sha256": "7b279d0ac17a079e6168cc022e63f6b233c115f324942d0b4afce6ca7de4a31e",
+      "text": "Vous préférez un sujet de votre travail ? Dans votre entreprise, qu'est-ce que vous pourriez expliquer à un nouveau collègue ?",
+      "file": "audio/gemini/sit-perso-question.mp3",
+      "model": "gemini-3.8-flash-tts",
+      "voice": "fr-fr-tutor-5",
+      "style": "Français de France naturel, voix chaleureuse et claire, débit conversationnel posé."
+    },
+    "plan-1": {
+      "sha256": "b2ac01e6e9fe37a8ed2bc5743f71551e6d02ba5f56f2aaa3ac7308d06a31fd99",
+      "text": "Le principe. Phrase utile : L'idée, c'est que…",
+      "file": "audio/gemini/plan-1.mp3",
+      "model": "gemini-3.8-flash-tts",
+      "voice": "fr-fr-tutor-5",
+      "style": "Français de France naturel, voix chaleureuse et claire, débit conversationnel posé."
+    },
+    "plan-2": {
+      "sha256": "82d646f7009189cf929edc76bdb14f0e4e28704c501003d5e6cf26023e3fd1bb",
+      "text": "Comment faire. Phrase utile : Il suffit de…",
+      "file": "audio/gemini/plan-2.mp3",
+      "model": "gemini-3.8-flash-tts",
+      "voice": "fr-fr-tutor-5",
+      "style": "Français de France naturel, voix chaleureuse et claire, débit conversationnel posé."
+    },
+    "plan-3": {
+      "sha256": "97cda04de82dec48c5144fb06833f0e942139b2a650f684092ea8798a3f4ae08",
+      "text": "Une différence. Phrase utile : Ce n'est pas tout à fait la même chose que…",
+      "file": "audio/gemini/plan-3.mp3",
+      "model": "gemini-3.8-flash-tts",
+      "voice": "fr-fr-tutor-5",
+      "style": "Français de France naturel, voix chaleureuse et claire, débit conversationnel posé."
+    },
+    "plan-4": {
+      "sha256": "b5a6eac4ba629f957cf71b53b59b30443579a8f84ccd5ef531ea9f537f95df08",
+      "text": "Vérifier. Phrase utile : On est bien d'accord que… ?",
+      "file": "audio/gemini/plan-4.mp3",
+      "model": "gemini-3.8-flash-tts",
+      "voice": "fr-fr-tutor-5",
+      "style": "Français de France naturel, voix chaleureuse et claire, débit conversationnel posé."
+    },
+    "avant-consigne": {
+      "sha256": "7dcbcebe6f009999524ef1863cf01faabc202af3f553226021f721e12a700d3e",
+      "text": "Donnez votre avis sur le sujet, sans préparer. Les erreurs ne sont pas un problème. À la fin du cours, vous parlerez encore 1 minute : vous verrez la différence.",
+      "file": "audio/gemini/avant-consigne.mp3",
+      "model": "gemini-3.8-flash-tts",
+      "voice": "fr-fr-tutor-5",
+      "style": "Français de France naturel, voix chaleureuse et claire, débit conversationnel posé."
+    },
+    "ecoute-consigne": {
+      "sha256": "1220ccf8fb6145001a4283bc3f97655aed906f3655887c44241f054c0952385a",
+      "text": "Deux extraits courts. Pour chaque extrait : devinez, écoutez, répondez, réécoutez.",
+      "file": "audio/gemini/ecoute-consigne.mp3",
+      "model": "gemini-3.8-flash-tts",
+      "voice": "fr-fr-tutor-5",
+      "style": "Français de France naturel, voix chaleureuse et claire, débit conversationnel posé."
+    }
+  },
+  "model": "gemini-3.8-flash-tts",
+  "voice": "fr-fr-tutor-5",
+  "style": "Français de France naturel, voix chaleureuse et claire, débit conversationnel posé."
+}

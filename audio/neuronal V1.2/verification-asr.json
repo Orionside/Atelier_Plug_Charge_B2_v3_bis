@@ -1,0 +1,666 @@
+{
+  "note": "L'accord de mots est une mesure ASR approximative, pas une note de prosodie. Écoute humaine obligatoire.",
+  "transcripteur": "mlx-whisper large-v3-turbo, français",
+  "clips": [
+    {
+      "id": "avant-consigne",
+      "expected": "Donnez votre avis sur le sujet, sans préparer. Les erreurs ne sont pas un problème. À la fin du cours, vous parlerez encore 1 minute : vous verrez la différence.",
+      "xtts_spoken_text": "Donnez votre avis sur le sujet, sans préparer. Les erreurs ne sont pas un problème. À la fin du cours, vous parlerez encore 1 minute: vous verrez la différence.",
+      "gemini": {
+        "transcription": "Donnez votre avis sur le sujet, s'en préparer. Les erreurs ne sont pas un problème. À la fin du cours, vous parlerez encore une minute. Vous verrez la différence.",
+        "accord_mots": 0.915,
+        "duration_s": 10.03
+      },
+      "xtts": {
+        "transcription": "Donnez votre avis sur le sujet, s'en préparer. Les erreurs ne sont pas un problème. À la fin du cours, vous parlerez encore un minute. Vous verrez la différence.",
+        "accord_mots": 0.915,
+        "duration_s": 8.88
+      }
+    },
+    {
+      "id": "diff-a",
+      "expected": "Anglais, sigle et chiffres arrivent très vite : « Plug and Charge, ou plutôt, d'un point de vue technique, ISO 15118 ». Pas besoin de tout comprendre. Retenez l'expression utile : d'un point de vue technique (= si on regarde la technique).",
+      "xtts_spoken_text": "Anglais, sigle et chiffres arrivent très vite: Plug and Charge, ou plutôt, d'un point de vue technique, ISO 15118. Pas besoin de tout comprendre. Retenez l'expression utile: d'un point de vue technique, c'est-à-dire si on regarde la technique.",
+      "gemini": {
+        "transcription": "Anglais, sigles et chiffres arrivent très vite. Plug and charge, ou plutôt d'un point de vue technique, ISO 15118. Pas besoin de tout comprendre. Retenez l'expression utile d'un point de vue technique, si on regarde la technique.",
+        "accord_mots": 0.975,
+        "duration_s": 15.08
+      },
+      "xtts": {
+        "transcription": "Anglais, sigles et chiffres arrivent très vite. Plug and charge, ou plutôt, d'un point de vue technique, ISO 15118. Pas besoin de tout comprendre. Retenez l'expression utile. D'un point de vue technique, c'est-à-dire si on regarde la technique.",
+        "accord_mots": 0.977,
+        "duration_s": 16.5
+      }
+    },
+    {
+      "id": "diff-b",
+      "expected": "« Ça me semble être une usine à gaz absolument extraordinaire. À quel point c'est un challenge pour Chargemap, du coup ? » Du coup = donc : à l'oral, on l'entend partout. Un challenge = un défi (mot anglais très utilisé en entreprise).",
+      "xtts_spoken_text": "Ça me semble être une usine à gaz absolument extraordinaire. À quel point c'est un challenge pour Chargemap, du coup? Du coup veut dire donc: à l'oral, on l'entend partout. Un challenge veut dire un défi, mot anglais très utilisé en entreprise.",
+      "gemini": {
+        "transcription": "Ça me semble être une usine à gaz absolument extraordinaire. À quel point c'est un challenge pour ChargeMap du coup ? Du coup égale donc. À l'oral, on l'entend partout. Un challenge égale un défi. Mot anglais très utilisé en entreprise.",
+        "accord_mots": 0.976,
+        "duration_s": 13.07
+      },
+      "xtts": {
+        "transcription": "Ça me semble être une usine à gaz absolument extraordinaire. À quel point c'est un challenge pour ChargeMap, du coup ? Du coup veut dire donc que, à l'oral, on l'entend partout. Un challenge veut dire un défi, mot anglais très utilisé en entreprise.",
+        "accord_mots": 0.989,
+        "duration_s": 15.06
+      }
+    },
+    {
+      "id": "ecoute-a-devine",
+      "expected": "« Plug » = brancher, « charge » = recharger. À votre avis, que fait le Plug & Charge quand on branche une voiture électrique ? Répondez à voix haute.",
+      "xtts_spoken_text": "Plug veut dire brancher, charge veut dire recharger. À votre avis, que fait le Plug & Charge quand on branche une voiture électrique? Répondez à voix haute.",
+      "gemini": {
+        "transcription": "Plug égale brancher. Charge égale recharger. À votre avis, que fait le plug and charge quand on branche une voiture électrique? Répondez à voix haute.",
+        "accord_mots": 0.936,
+        "duration_s": 9.88
+      },
+      "xtts": {
+        "transcription": "Plug veut dire brancher, charge veut dire recharger. À votre avis, que fait le plug et charge quand on branche une voiture électrique ? Répondez à voix haute.",
+        "accord_mots": 0.981,
+        "duration_s": 10.7
+      }
+    },
+    {
+      "id": "ecoute-b-devine",
+      "expected": "Le journaliste pense que, derrière cette simplicité, le système est très compliqué. À votre avis, pourquoi ? Répondez à voix haute.",
+      "xtts_spoken_text": "Le journaliste pense que, derrière cette simplicité, le système est très compliqué. À votre avis, pourquoi? Répondez à voix haute.",
+      "gemini": {
+        "transcription": "Le journaliste pense que derrière cette simplicité, le système est très compliqué. A votre avis, pourquoi ? Répondez à voix haute.",
+        "accord_mots": 1.0,
+        "duration_s": 7.18
+      },
+      "xtts": {
+        "transcription": "Le journaliste pense que, derrière cette simplicité, le système est très compliqué. À votre avis, pourquoi ? Répondez à voix haute.",
+        "accord_mots": 1.0,
+        "duration_s": 8.43
+      }
+    },
+    {
+      "id": "essai-1",
+      "expected": "Expliquez avec vos notes. Pour l'essai 2, ajoutez : « L'idée, c'est que… » et « Il suffit de… ». Et faites monter la voix à la fin de chaque étape.",
+      "xtts_spoken_text": "Expliquez avec vos notes. Pour l'essai 2, ajoutez: L'idée, c'est que… et Il suffit de…. Et faites monter la voix à la fin de chaque étape.",
+      "gemini": {
+        "transcription": "Pour laisser de, l'idée c'est que et il suffit de.",
+        "accord_mots": 0.488,
+        "duration_s": 4.39
+      },
+      "xtts": {
+        "transcription": "Expliquez avec vos notes. Pour laisser deux ajoutés, l'idée c'est que… et il suffit de… et faites monter la voix à la fin de chaque étape.",
+        "accord_mots": 0.877,
+        "duration_s": 11.41
+      }
+    },
+    {
+      "id": "essai-2",
+      "expected": "Votre formateur joue le collègue et vous pose une question. Répondez, puis vérifiez avec : « On est bien d'accord que… ? » Pour l'essai 3, commencez votre réponse à la question par : « Si j'ai bien compris, … ».",
+      "xtts_spoken_text": "Votre formateur joue le collègue et vous pose une question. Répondez, puis vérifiez avec: On est bien d'accord que…? Pour l'essai 3, commencez votre réponse à la question par: Si j'ai bien compris, ….",
+      "gemini": {
+        "transcription": "Votre formateur joue le collègue et vous pose une question. Répondez, puis vérifiez avec. On est bien d'accord que… Pour l'essai 3, commencez votre réponse à la question par… Si j'ai bien compris…",
+        "accord_mots": 1.0,
+        "duration_s": 13.06
+      },
+      "xtts": {
+        "transcription": "Votre formateur joue le collègue et vous pose une question. Répondez, puis vérifiez avec « on est bien d'accord que… » Pour l'essai 3, commencez votre réponse à la question par « si j'ai bien compris… »",
+        "accord_mots": 1.0,
+        "duration_s": 13.0
+      }
+    },
+    {
+      "id": "essai-3",
+      "expected": "Sans vos notes. Seulement l'essentiel.",
+      "xtts_spoken_text": "Sans vos notes. Seulement l'essentiel.",
+      "gemini": {
+        "transcription": "Sans Venat, seulement l'essentiel.",
+        "accord_mots": 0.727,
+        "duration_s": 2.48
+      },
+      "xtts": {
+        "transcription": "Sans vos notes, seulement l'essentiel.",
+        "accord_mots": 1.0,
+        "duration_s": 2.83
+      }
+    },
+    {
+      "id": "forme-p1",
+      "expected": "L'idée, c'est que…",
+      "xtts_spoken_text": "L'idée, c'est que…",
+      "gemini": {
+        "transcription": "L'idée c'est que...",
+        "accord_mots": 1.0,
+        "duration_s": 0.96
+      },
+      "xtts": {
+        "transcription": "L'idée c'est que...",
+        "accord_mots": 1.0,
+        "duration_s": 1.43
+      }
+    },
+    {
+      "id": "forme-p2",
+      "expected": "Il suffit de…",
+      "xtts_spoken_text": "Il suffit de…",
+      "gemini": {
+        "transcription": "Il suffit de...",
+        "accord_mots": 1.0,
+        "duration_s": 1.37
+      },
+      "xtts": {
+        "transcription": "Il suffit de...",
+        "accord_mots": 1.0,
+        "duration_s": 1.17
+      }
+    },
+    {
+      "id": "forme-p3",
+      "expected": "Si j'ai bien compris, …",
+      "xtts_spoken_text": "Si j'ai bien compris, …",
+      "gemini": {
+        "transcription": "Si j'ai bien compris...",
+        "accord_mots": 1.0,
+        "duration_s": 1.34
+      },
+      "xtts": {
+        "transcription": "Si j'ai bien compris,",
+        "accord_mots": 1.0,
+        "duration_s": 1.74
+      }
+    },
+    {
+      "id": "forme-p4",
+      "expected": "On est bien d'accord que… ?",
+      "xtts_spoken_text": "On est bien d'accord que…?",
+      "gemini": {
+        "transcription": "On est bien d'accord que...",
+        "accord_mots": 1.0,
+        "duration_s": 1.44
+      },
+      "xtts": {
+        "transcription": "On est bien d'accord que...",
+        "accord_mots": 1.0,
+        "duration_s": 1.65
+      }
+    },
+    {
+      "id": "forme-p5",
+      "expected": "Quelle est la différence avec… ?",
+      "xtts_spoken_text": "Quelle est la différence avec…?",
+      "gemini": {
+        "transcription": "Quelle est la différence avec...",
+        "accord_mots": 1.0,
+        "duration_s": 1.96
+      },
+      "xtts": {
+        "transcription": "Quelle est la différence avec ?",
+        "accord_mots": 1.0,
+        "duration_s": 1.64
+      }
+    },
+    {
+      "id": "forme-p6",
+      "expected": "Ce n'est pas tout à fait la même chose.",
+      "xtts_spoken_text": "Ce n'est pas tout à fait la même chose.",
+      "gemini": {
+        "transcription": "Ce n'est pas tout à fait la même chose.",
+        "accord_mots": 1.0,
+        "duration_s": 2.06
+      },
+      "xtts": {
+        "transcription": "Ce n'est pas tout à fait la même chose.",
+        "accord_mots": 1.0,
+        "duration_s": 2.03
+      }
+    },
+    {
+      "id": "gap-a-0-sol",
+      "expected": "C'est un nouveau protocole de communication entre, d'un côté, le véhicule et, de l'autre, les bornes.",
+      "xtts_spoken_text": "C'est un nouveau protocole de communication entre, d'un côté, le véhicule et, de l'autre, les bornes.",
+      "gemini": {
+        "transcription": "C'est un nouveau protocole de communication entre, d'un côté, le véhicule et de l'autre, les bornes.",
+        "accord_mots": 1.0,
+        "duration_s": 6.08
+      },
+      "xtts": {
+        "transcription": "C'est un nouveau protocole de communication entre, d'un côté, le véhicule et de l'autre, les bornes plignolaires.",
+        "accord_mots": 0.974,
+        "duration_s": 8.32
+      }
+    },
+    {
+      "id": "gap-a-1-sol",
+      "expected": "C'est une expérience beaucoup plus fluide de recharge.",
+      "xtts_spoken_text": "C'est une expérience beaucoup plus fluide de recharge.",
+      "gemini": {
+        "transcription": "C'est une expérience beaucoup plus fluide de recharge.",
+        "accord_mots": 1.0,
+        "duration_s": 2.8
+      },
+      "xtts": {
+        "transcription": "C'est une expérience beaucoup plus fluide de recharge.",
+        "accord_mots": 1.0,
+        "duration_s": 3.79
+      }
+    },
+    {
+      "id": "gap-b-0-sol",
+      "expected": "Parce que, si j'ai bien compris , il faut que la voiture discute avec la borne.",
+      "xtts_spoken_text": "Parce que, si j'ai bien compris, il faut que la voiture discute avec la borne.",
+      "gemini": {
+        "transcription": "Parce que si j'ai bien compris, il faut que la voiture discute avec la borne.",
+        "accord_mots": 1.0,
+        "duration_s": 3.65
+      },
+      "xtts": {
+        "transcription": "Parce que, si j'ai bien compris, il faut que la voiture discute avec la borne.",
+        "accord_mots": 1.0,
+        "duration_s": 3.59
+      }
+    },
+    {
+      "id": "gap-b-1-sol",
+      "expected": "Ça me semble être une usine à gaz absolument extraordinaire.",
+      "xtts_spoken_text": "Ça me semble être une usine à gaz absolument extraordinaire.",
+      "gemini": {
+        "transcription": "Ça me semble être une usine à gaz absolument extraordinaire.",
+        "accord_mots": 1.0,
+        "duration_s": 2.99
+      },
+      "xtts": {
+        "transcription": "Ça me semble être une usine à gaz absolument extraordinaire.",
+        "accord_mots": 1.0,
+        "duration_s": 3.71
+      }
+    },
+    {
+      "id": "intro-consigne",
+      "expected": "Expliquer simplement… et vérifier qu'on s'est compris. Aujourd'hui, vous apprenez à expliquer quelque chose de compliqué avec des mots simples, puis à vérifier que l'autre a bien compris. En 1 minute, sans chercher vos mots.",
+      "xtts_spoken_text": "Expliquer simplement… et vérifier qu'on s'est compris. Aujourd'hui, vous apprenez à expliquer quelque chose de compliqué avec des mots simples, puis à vérifier que l'autre a bien compris. En 1 minute, sans chercher vos mots.",
+      "gemini": {
+        "transcription": "Expliquez simplement et vérifiez qu'on s'est compris. Aujourd'hui, vous apprenez à expliquer quelque chose de compliqué avec des mots simples, puis à vérifier que l'autre a bien compris, en une minute sans chercher vos mots.",
+        "accord_mots": 0.923,
+        "duration_s": 12.15
+      },
+      "xtts": {
+        "transcription": "Expliquez simplement et vérifiez qu'on s'est compris. Aujourd'hui, vous apprenez à expliquer quelque chose de compliqué avec des mots simples, puis à vérifier que l'autre a bien compris. En un minute, sans chercher vos mots.",
+        "accord_mots": 0.923,
+        "duration_s": 16.65
+      }
+    },
+    {
+      "id": "melo-regle",
+      "expected": "Découpez votre explication en étapes courtes. À la fin de chaque étape, la voix monte : l'autre attend la suite. À la dernière étape, la voix ne monte plus : l'explication est finie.",
+      "xtts_spoken_text": "Découpez votre explication en étapes courtes. À la fin de chaque étape, la voix monte: l'autre attend la suite. À la dernière étape, la voix ne monte plus: l'explication est finie.",
+      "gemini": {
+        "transcription": "Découpez votre explication en étapes courtes. À la fin de chaque étape, la voix monte. L'autre attend la suite. À la dernière étape, la voix ne monte plus. L'explication est finie.",
+        "accord_mots": 1.0,
+        "duration_s": 12.16
+      },
+      "xtts": {
+        "transcription": "Découpez votre explication en étapes courtes. À la fin de chaque étape, la voix monte, l'autre attend la suite. À la dernière étape, la voix ne monte plus. L'explication est finie.",
+        "accord_mots": 1.0,
+        "duration_s": 11.26
+      }
+    },
+    {
+      "id": "obj-1",
+      "expected": "Mais concrètement, je dois faire quoi ?",
+      "xtts_spoken_text": "Mais concrètement, je dois faire quoi?",
+      "gemini": {
+        "transcription": "Mais concrètement, je dois faire quoi ?",
+        "accord_mots": 1.0,
+        "duration_s": 1.99
+      },
+      "xtts": {
+        "transcription": "Mais concrètement, je dois faire quoi ?",
+        "accord_mots": 1.0,
+        "duration_s": 2.3
+      }
+    },
+    {
+      "id": "obj-2",
+      "expected": "Quelle est la différence avec l'ancien système, du coup ?",
+      "xtts_spoken_text": "Quelle est la différence avec l'ancien système, du coup?",
+      "gemini": {
+        "transcription": "Quelle est la différence avec l'ancien système du coup ?",
+        "accord_mots": 1.0,
+        "duration_s": 2.55
+      },
+      "xtts": {
+        "transcription": "Quelle est la différence avec l'ancien système du coup ?",
+        "accord_mots": 1.0,
+        "duration_s": 2.3
+      }
+    },
+    {
+      "id": "obj-3",
+      "expected": "Et si ça ne marche pas ?",
+      "xtts_spoken_text": "Et si ça ne marche pas?",
+      "gemini": {
+        "transcription": "Et si ça ne marche pas ?",
+        "accord_mots": 1.0,
+        "duration_s": 1.4
+      },
+      "xtts": {
+        "transcription": "Et si ça ne marche pas ?",
+        "accord_mots": 1.0,
+        "duration_s": 1.25
+      }
+    },
+    {
+      "id": "obj-4",
+      "expected": "Ça me semble être une usine à gaz, non ?",
+      "xtts_spoken_text": "Ça me semble être une usine à gaz, non?",
+      "gemini": {
+        "transcription": "Ça me semble être une usine à gaz, non ?",
+        "accord_mots": 1.0,
+        "duration_s": 2.34
+      },
+      "xtts": {
+        "transcription": "Ça me semble être une usine à gaz, non ?",
+        "accord_mots": 1.0,
+        "duration_s": 1.63
+      }
+    },
+    {
+      "id": "p1",
+      "expected": "L'idée, c'est que chaque client signe en ligne, sans imprimer le contrat.",
+      "xtts_spoken_text": "L'idée, c'est que chaque client signe en ligne, sans imprimer le contrat.",
+      "gemini": {
+        "transcription": "L'idée, c'est que chaque client signe en ligne, sans imprimer le contrat.",
+        "accord_mots": 1.0,
+        "duration_s": 3.76
+      },
+      "xtts": {
+        "transcription": "L'idée, c'est que chaque client signe en ligne sans imprimer le contrat.",
+        "accord_mots": 1.0,
+        "duration_s": 4.27
+      }
+    },
+    {
+      "id": "p2",
+      "expected": "Il suffit d'ouvrir le document, de cliquer sur « Signer », et c'est fini.",
+      "xtts_spoken_text": "Il suffit d'ouvrir le document, de cliquer sur Signer, et c'est fini.",
+      "gemini": {
+        "transcription": "Il suffit d'ouvrir le document, de cliquer sur « Signer » et c'est fini !",
+        "accord_mots": 1.0,
+        "duration_s": 3.85
+      },
+      "xtts": {
+        "transcription": "Il suffit d'ouvrir le document, de cliquer sur « Signer » et c'est fini.",
+        "accord_mots": 1.0,
+        "duration_s": 4.02
+      }
+    },
+    {
+      "id": "p3",
+      "expected": "Si j'ai bien compris, le client signe en ligne, et nous recevons le contrat tout de suite.",
+      "xtts_spoken_text": "Si j'ai bien compris, le client signe en ligne, et nous recevons le contrat tout de suite.",
+      "gemini": {
+        "transcription": "Si j'ai bien compris, le client signe en ligne et nous recevons le contrat tout de suite.",
+        "accord_mots": 1.0,
+        "duration_s": 4.92
+      },
+      "xtts": {
+        "transcription": "Si j'ai bien compris, le client signe en ligne et nous recevons le contrat tout de suite.",
+        "accord_mots": 1.0,
+        "duration_s": 4.0
+      }
+    },
+    {
+      "id": "p4",
+      "expected": "On est bien d'accord que je signe une seule fois, et que le client reçoit une copie ?",
+      "xtts_spoken_text": "On est bien d'accord que je signe une seule fois, et que le client reçoit une copie?",
+      "gemini": {
+        "transcription": "On est bien d'accord que je signe une seule fois et que le client reçoit une copie ?",
+        "accord_mots": 1.0,
+        "duration_s": 3.92
+      },
+      "xtts": {
+        "transcription": "On est bien d'accord que je signe une seule fois et que le client reçoit une copie ?",
+        "accord_mots": 1.0,
+        "duration_s": 3.36
+      }
+    },
+    {
+      "id": "p5",
+      "expected": "Quelle est la différence avec l'ancien système, du coup ?",
+      "xtts_spoken_text": "Quelle est la différence avec l'ancien système, du coup?",
+      "gemini": {
+        "transcription": "Quelle est la différence avec l'ancien système ?",
+        "accord_mots": 0.889,
+        "duration_s": 2.76
+      },
+      "xtts": {
+        "transcription": "Quelle est la différence avec l'ancien système, du coup ?",
+        "accord_mots": 1.0,
+        "duration_s": 2.4
+      }
+    },
+    {
+      "id": "p6",
+      "expected": "Un devis et une facture, ce n'est pas tout à fait la même chose.",
+      "xtts_spoken_text": "Un devis et une facture, ce n'est pas tout à fait la même chose.",
+      "gemini": {
+        "transcription": "Un devis et une facture, ce n'est pas tout à fait la même chose.",
+        "accord_mots": 1.0,
+        "duration_s": 3.63
+      },
+      "xtts": {
+        "transcription": "Un devis et une facture, ce n'est pas tout à fait la même chose.",
+        "accord_mots": 1.0,
+        "duration_s": 2.81
+      }
+    },
+    {
+      "id": "q-a-0",
+      "expected": "Avec le Plug & Charge, que se passe-t-il quand on branche la voiture ? Il faut payer avec une carte bancaire. La recharge démarre toute seule, sans carte. Il faut appeler l'opérateur.",
+      "xtts_spoken_text": "Avec le Plug & Charge, que se passe-t-il quand on branche la voiture? Il faut payer avec une carte bancaire. La recharge démarre toute seule, sans carte. Il faut appeler l'opérateur.",
+      "gemini": {
+        "transcription": "Avec le plug and charge, que se passe-t-il quand on branche la voiture ? Il faut payer avec une carte bancaire ? La recharge démarre toute seule, sans carte ? Il faut appeler l'opérateur.",
+        "accord_mots": 0.985,
+        "duration_s": 10.18
+      },
+      "xtts": {
+        "transcription": "Avec le plug et charge, que se passe-t-il quand on branche la voiture ? Il faut payer avec une carte bancaire. La recharge démarre toute seule, sans carte. Il faut appeler l'opérateur.",
+        "accord_mots": 0.985,
+        "duration_s": 9.71
+      }
+    },
+    {
+      "id": "q-a-0-expl",
+      "expected": "La borne récupère l'identifiant installé dans la voiture, demande l'autorisation, et « la charge démarre » sans passer de carte.",
+      "xtts_spoken_text": "La borne récupère l'identifiant installé dans la voiture, demande l'autorisation, et la charge démarre sans passer de carte.",
+      "gemini": {
+        "transcription": "La borne récupère l'identifiant installé dans la voiture, demande l'autorisation et la charge démarre sans passer de carte.",
+        "accord_mots": 1.0,
+        "duration_s": 7.54
+      },
+      "xtts": {
+        "transcription": "La borne récupère l'identifiant installé dans la voiture, demande l'autorisation et la charge démarre sans passer de carte.",
+        "accord_mots": 1.0,
+        "duration_s": 6.45
+      }
+    },
+    {
+      "id": "q-a-1",
+      "expected": "Selon lui, cette recharge est plus… chère et plus lente. compliquée, mais plus rapide. simple et plus sûre.",
+      "xtts_spoken_text": "Selon lui, cette recharge est plus… chère et plus lente. compliquée, mais plus rapide. simple et plus sûre.",
+      "gemini": {
+        "transcription": "Selon lui, cette recharge est plus chère et plus lente, compliquée mais plus rapide, simple et plus sûre.",
+        "accord_mots": 1.0,
+        "duration_s": 7.48
+      },
+      "xtts": {
+        "transcription": "Selon lui, cette recharge est plus chère et plus lent. Compliquée mais plus rapide. Simple et plus sûre.",
+        "accord_mots": 0.944,
+        "duration_s": 8.12
+      }
+    },
+    {
+      "id": "q-a-1-expl",
+      "expected": "« Une expérience beaucoup plus fluide de recharge, et beaucoup plus intéressante d'un point de vue sécurité. »",
+      "xtts_spoken_text": "Une expérience beaucoup plus fluide de recharge, et beaucoup plus intéressante d'un point de vue sécurité.",
+      "gemini": {
+        "transcription": "Une expérience beaucoup plus fluide de recharge et beaucoup plus intéressante d'un point de vue sécurité.",
+        "accord_mots": 1.0,
+        "duration_s": 5.08
+      },
+      "xtts": {
+        "transcription": "Une expérience beaucoup plus fluide de recharge et beaucoup plus intéressante d'un point de vue sécurité.",
+        "accord_mots": 1.0,
+        "duration_s": 5.79
+      }
+    },
+    {
+      "id": "q-b-0",
+      "expected": "Pourquoi le journaliste pense-t-il que c'est compliqué ? Parce que les voitures électriques sont lentes. Parce qu'il y a des bornes, des réseaux, des marques et des modèles de voitures différents. Parce que l'application est payante.",
+      "xtts_spoken_text": "Pourquoi le journaliste pense-t-il que c'est compliqué? Parce que les voitures électriques sont lentes. Parce qu'il y a des bornes, des réseaux, des marques et des modèles de voitures différents. Parce que l'application est payante.",
+      "gemini": {
+        "transcription": "Pourquoi le journaliste pense-t-il que c'est compliqué ? Parce que les voitures électriques sont lentes ? Parce qu'il y a des bornes, des réseaux, des marques et des modèles de voitures différents ? Parce que l'application est payante ?",
+        "accord_mots": 1.0,
+        "duration_s": 11.43
+      },
+      "xtts": {
+        "transcription": "Pourquoi le journaliste pense-t-il que c'est compliqué ? Parce que les voitures électriques sont lentes mais si en dit. Parce qu'il y a des bornes, des réseaux, des marques et des modèles de voitures différents. Parce que l'application est payante.",
+        "accord_mots": 0.952,
+        "duration_s": 13.53
+      }
+    },
+    {
+      "id": "q-b-0-expl",
+      "expected": "« Il y a des bornes qui sont différentes, des réseaux de recharge différents, des marques de voitures différentes, des modèles de voitures différents. »",
+      "xtts_spoken_text": "Il y a des bornes qui sont différentes, des réseaux de recharge différents, des marques de voitures différentes, des modèles de voitures différents.",
+      "gemini": {
+        "transcription": "Il y a des bornes qui sont différentes, des réseaux de recharge différents, des marques de voitures différentes, des modèles de voitures différents.",
+        "accord_mots": 1.0,
+        "duration_s": 6.87
+      },
+      "xtts": {
+        "transcription": "Il y a des bornes qui sont différentes, des réseaux de recharge différents, des marques de voitures différentes, des modèles de voitures différents.",
+        "accord_mots": 1.0,
+        "duration_s": 7.33
+      }
+    },
+    {
+      "id": "q-b-1",
+      "expected": "Que veut dire « une usine à gaz » ici ? Une usine qui produit du gaz. Un système beaucoup trop compliqué. Une borne de recharge.",
+      "xtts_spoken_text": "Que veut dire une usine à gaz ici? Une usine qui produit du gaz. Un système beaucoup trop compliqué. Une borne de recharge.",
+      "gemini": {
+        "transcription": "Que veut dire une usine à gaz ici ? Une usine qui produit du gaz ? Un système beaucoup trop compliqué ? Une borne de recharge ?",
+        "accord_mots": 1.0,
+        "duration_s": 9.45
+      },
+      "xtts": {
+        "transcription": "Que veut dire une usine à gaz ici ? Une usine qui produit du gaz. Un système beaucoup trop compliqué. Une borne de recharge.",
+        "accord_mots": 1.0,
+        "duration_s": 8.36
+      }
+    },
+    {
+      "id": "q-b-1-expl",
+      "expected": "Une usine à gaz = un système trop compliqué. Une expression très courante au bureau.",
+      "xtts_spoken_text": "Une usine à gaz veut dire un système trop compliqué. Une expression très courante au bureau.",
+      "gemini": {
+        "transcription": "Une usine à gaz égale un système trop compliqué. Une expression très courante au bureau.",
+        "accord_mots": 0.966,
+        "duration_s": 5.09
+      },
+      "xtts": {
+        "transcription": "Une usine à gaz veut dire un système trop compliqué. Une expression très courante au bureau.",
+        "accord_mots": 1.0,
+        "duration_s": 4.81
+      }
+    },
+    {
+      "id": "semaine-1",
+      "expected": "Répétez les 3 phrases de la mélodie avec la vidéo, en même temps que la voix (5 minutes).",
+      "xtts_spoken_text": "Répétez les 3 phrases de la mélodie avec la vidéo, en même temps que la voix, 5 minutes.",
+      "gemini": {
+        "transcription": "Répétez les trois phrases de la mélodie avec la vidéo en même temps que la voix, 5 minutes.",
+        "accord_mots": 0.944,
+        "duration_s": 4.7
+      },
+      "xtts": {
+        "transcription": "Répétez les trois phrases de la mélodie avec la vidéo, en même temps que la voix, cinq minutes.",
+        "accord_mots": 0.889,
+        "duration_s": 5.22
+      }
+    },
+    {
+      "id": "semaine-2",
+      "expected": "Dites les 6 phrases utiles sans regarder (bouton « Vérifier sans regarder »).",
+      "xtts_spoken_text": "Dites les 6 phrases utiles sans regarder, bouton Vérifier sans regarder.",
+      "gemini": {
+        "transcription": "Dites les six phrases utiles sans regarder. Bouton « Vérifier sans regarder ».",
+        "accord_mots": 0.909,
+        "duration_s": 4.66
+      },
+      "xtts": {
+        "transcription": "Dites les six phrases utiles sans regarder, bouton vérifier sans regarder.",
+        "accord_mots": 0.909,
+        "duration_s": 5.4
+      }
+    },
+    {
+      "id": "semaine-3",
+      "expected": "En réunion, reformulez une fois : « Si j'ai bien compris, … ».",
+      "xtts_spoken_text": "En réunion, reformulez une fois: Si j'ai bien compris, ….",
+      "gemini": {
+        "transcription": "En réunion, reformulez une fois. Si j'ai bien compris...",
+        "accord_mots": 1.0,
+        "duration_s": 3.85
+      },
+      "xtts": {
+        "transcription": "En réunion reformulée une fois. Si j'ai bien compris, ben...",
+        "accord_mots": 0.857,
+        "duration_s": 4.16
+      }
+    },
+    {
+      "id": "semaine-4",
+      "expected": "Enregistrez 1 minute : expliquez un outil de votre travail, et envoyez-la à votre formateur.",
+      "xtts_spoken_text": "Enregistrez 1 minute: expliquez un outil de votre travail, et envoyez-la à votre formateur.",
+      "gemini": {
+        "transcription": "Enregistrez une minute. Expliquez un outil de votre travail et envoyez-la à votre formateur.",
+        "accord_mots": 0.933,
+        "duration_s": 5.87
+      },
+      "xtts": {
+        "transcription": "Enregistrez un minute, expliquez un outil de votre travail et envoyez-la à votre formateur.",
+        "accord_mots": 0.933,
+        "duration_s": 9.79
+      }
+    },
+    {
+      "id": "sit-dialogue",
+      "expected": "« On m'a parlé du nouvel outil de signature électronique. Tu peux m'expliquer simplement comment ça marche ? »",
+      "xtts_spoken_text": "On m'a parlé du nouvel outil de signature électronique. Tu peux m'expliquer simplement comment ça marche?",
+      "gemini": {
+        "transcription": "On m'a parlé d'une nouvelle outil de signature électronique. Tu peux m'expliquer simplement comment ça marche ?",
+        "accord_mots": 0.865,
+        "duration_s": 5.26
+      },
+      "xtts": {
+        "transcription": "on m'a parlé du nouvel outil de signature électronique. Tu peux m'expliquer simplement comment ça marche ?",
+        "accord_mots": 1.0,
+        "duration_s": 5.45
+      }
+    },
+    {
+      "id": "sit-mission",
+      "expected": "Vous connaissez bien cet outil. Expliquez simplement, étape par étape, puis vérifiez qu'il a bien compris.",
+      "xtts_spoken_text": "Vous connaissez bien cet outil. Expliquez simplement, étape par étape, puis vérifiez qu'il a bien compris.",
+      "gemini": {
+        "transcription": "Vous connaissez bien cet outil. Expliquez simplement, étape par étape, puis vérifiez qu'il a bien compris.",
+        "accord_mots": 1.0,
+        "duration_s": 6.41
+      },
+      "xtts": {
+        "transcription": "Vous connaissez bien cet outil. Expliquez simplement, étape par étape, puis vérifiez qu'il a bien compris.",
+        "accord_mots": 1.0,
+        "duration_s": 6.76
+      }
+    }
+  ]
+}

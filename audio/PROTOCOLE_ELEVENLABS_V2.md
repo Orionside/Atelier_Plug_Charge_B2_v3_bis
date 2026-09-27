@@ -1,0 +1,37 @@
+# Catalogue prosodique — Plug & Charge B2 v3 bis
+
+Le fichier source à utiliser est [`catalogue-elevenlabs-v2.json`](catalogue-elevenlabs-v2.json) ; sa [version Markdown intégrale](catalogue-elevenlabs-v2.md) est destinée à la lecture et à la relecture pédagogique. La [version Markdown des textes seuls](textes-a-prononcer-elevenlabs-v2.md) est facile à lire ; le [fichier TXT correspondant](textes-a-prononcer-elevenlabs-v2.txt) conserve les balises de pause prêtes pour la génération. Ces deux derniers fichiers contiennent uniquement les segments pédagogiques à prononcer, un paragraphe par audio, sans identifiant ni commentaire. Le catalogue recense 236 éléments classés dans l'ordre du parcours, dont 109 segments pédagogiques candidats à une génération avec `eleven_multilingual_v2` (103 textes distincts après dédoublonnage), 11 textes liés à la vidéo originale, 103 titres/libellés/messages d'interface facultatifs pour l'accessibilité, 12 éléments réservés au formateur et un texte personnel impossible à préparer à l'avance. Le catalogue est **éditorial** : aucun de ces MP3 ElevenLabs n'a été généré ou validé.
+
+Pour mettre le fichier à jour après un changement du support :
+
+```sh
+node scripts/construire-catalogue-elevenlabs-v2.mjs
+```
+
+## Lire chaque entrée
+
+- `display_text` : texte affiché ou transcription lisible ; `[mot à compléter]` représente un champ vide.
+- `tts_text` : **seul champ à envoyer** comme texte parlé à ElevenLabs. Les annotations éditoriales ne sont pas des consignes silencieuses pour le modèle : si elles sont ajoutées au texte de la requête, il peut les prononcer.
+- `role`, `meaning`, `prosody` : intention communicative et consignes d'écoute humaine. Le choix de la voix, la formulation et la ponctuation de `tts_text` en sont les moyens pratiques.
+- `reveal` : moment où le bouton audio peut être affiché. Ne jamais lire une bonne réponse avant le choix, une solution avant la vérification, ou une formule cachée dans le mode « Vérifier sans regarder ».
+- `generation` : `candidat_apres_ecoute_humaine` = matière pédagogique à enregistrer ; `corpus_test_seulement_conserver_video_dans_support` = essai possible, sans remplacement de l'audio authentique associé aux courbes ; `optionnel_accessibilite` = interface, à privilégier par lecteur d'écran ; `ne_pas_generer_pour_apprenant` = notes formateur ; `impossible_a_prerendre` = saisie personnelle.
+- `qa` : contrôles spécifiques avant toute publication ; `audio_target` : chemin futur, pas un fichier existant ; `reuse_audio_of` : même texte déjà rencontré. Générer une fois le texte identique, puis copier le MP3 sous chaque nom attendu par le site.
+
+## Direction de lecture par fonction
+
+1. Choisir et tester une voix enregistrée **en français de France** sur les mêmes échantillons : consigne, explication, question ouverte, vérification, phrase professionnelle et amorce. La langue du texte ne corrige pas automatiquement l'accent d'une voix entraînée en anglais.
+2. Consignes : ton encourageant, groupes de sens courts, impératifs clairs. Explications : articuler les liens logiques sans effet de voix. Dialogues : spontanéité de réunion, non théâtrale. Options de QCM : débit et énergie comparables, sans dévoiler la bonne réponse.
+3. Questions : distinguer une recherche d'information (`question_ouverte`) d'une demande d'accord (`question_confirmation`). Le contour **n'est pas toujours montant en français** ; l'intention, la syntaxe et le contexte gouvernent le résultat. Écouter particulièrement `p4`, `p5`, `obj-3`, `q-a-0` et `q-b-1`.
+4. Amorces et trous : éviter une chute finale qui ferait croire que la phrase est terminée. Des pauses SSML brèves (`<break time="0.45s" />` ou `0.8s`) sont proposées, mais une pause seule ne garantit pas la bonne courbe ; tout fragment marqué `fragment_inacheve` ou `trou` exige une validation par un francophone natif. Si nécessaire, faire enregistrer ces segments par une personne.
+5. Nombres, sigles et signes : développer ce qui doit être entendu (`1 minute` → `une minute`, `ISO 15118` → `ISO quinze mille cent dix-huit`), ne pas prononcer les flèches de mélodie, points de séparation syllabique ou balises HTML. Vérifier `Plug & Charge`, `Chargemap`, `VIN`, `devis`, `facture` avec la voix choisie.
+6. Produire de petits segments pédagogiques, puis effectuer une écoute A/B aveugle avec une voix française humaine ou la vidéo originale. Vérifier mots omis, liaisons, accent, rythme, accentuation, intonation et adéquation à la fonction. Une transcription automatique ne valide que partiellement les mots ; elle ne certifie pas la prosodie.
+
+Les conseils officiels d'ElevenLabs confirment les [pauses SSML pour Multilingual v2](https://elevenlabs.io/docs/overview/capabilities/text-to-speech/best-practices), mais signalent des artefacts en cas d'abus. Les balises phonétiques ne fonctionnent pas avec ce modèle ; les [alias de dictionnaire](https://elevenlabs.io/docs/overview/capabilities/text-to-speech/best-practices) peuvent servir pour les noms/sigles. Les instructions de style insérées dans `tts_text` seraient prononcées. Le paramètre API `language_code` [n'est pas pris en charge pour Multilingual v2](https://elevenlabs.io/docs/api-reference/text-to-speech/convert). Le choix d'une [voix réellement francophone](https://elevenlabs.io/docs/help-center/troubleshooting/why-does-my-voice-change-accent-or-language) est central.
+
+## Décision technique et droits
+
+Pour les textes fixes, produire les MP3 **directement** avec ElevenLabs puis les placer sur le site est plus simple que produire ces mêmes textes avec ElevenLabs avant de les refaire avec XTTS-v2. Cloner une voix estimerait un timbre à partir d'échantillons ; cela ne transfère pas parfaitement chaque pause, liaison ou contour mélodique et introduit un second modèle pouvant altérer la diction. Une référence de clonage tirée d'une voix synthétique n'est pas une preuve de prosodie native. Pour les textes futurs, comparer une voix locale clonée à partir d'un **locuteur natif consentant** avec la sortie directe ElevenLabs, et retenir chaque segment seulement après écoute.
+
+Le [niveau gratuit d'ElevenLabs](https://elevenlabs.io/pricing) donne actuellement 10 000 crédits mensuels ; les 8 002 caractères uniques candidats ne comprennent ni les 103 libellés facultatifs, ni les reprises, ni le corpus vidéo. La facturation exacte dépend de l'offre et de la génération effective. Le [forfait gratuit](https://help.elevenlabs.io/hc/en-us/articles/13313564601361-Can-I-publish-the-content-I-generate-on-the-platform) n'autorise pas l'usage commercial et exige une attribution pour une diffusion non commerciale ; clarifier les droits avant de publier dans une formation payante. La [licence des poids XTTS-v2](https://huggingface.co/coqui/XTTS-v2/blob/main/LICENSE.txt) restreint également l'usage du modèle et de ses sorties au non-commercial.
+
+Une alternative réellement gratuite et potentiellement supérieure pour **ces textes fixes** est l'enregistrement par un formateur francophone natif, avec un micro correct et une relecture pédagogique : sa prosodie est humaine, mais cela coûte du temps. Pour une synthèse automatique locale, [Pocket TTS français](https://github.com/kyutai-labs/pocket-tts/releases), [Kokoro](https://huggingface.co/hexgrad/Kokoro-82M) et [MeloTTS](https://github.com/myshell-ai/MeloTTS) sont des candidats à comparer sur le même jeu de phrases ; rien ne permet d'affirmer qu'ils dépassent Eleven Multilingual v2 sur la prosodie française de cet atelier sans écoute comparative.

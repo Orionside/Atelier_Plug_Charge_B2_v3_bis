@@ -1,0 +1,6 @@
+# Environnement testé le 26 septembre 2026 sur MacBook Air M2, Python 3.11.
+# FFmpeg 8.1 (Homebrew) et DYLD_LIBRARY_PATH sont également nécessaires.
+f5-tts==1.1.22
+torch==2.14.0
+torchaudio==2.11.0
+torchcodec==0.16.0

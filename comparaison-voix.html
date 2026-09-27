@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="fr">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Comparaison des voix — Plug & Charge B2</title>
+<style>
+  body { max-width: 760px; margin: 2rem auto; padding: 0 1rem; font: 1.05rem/1.5 system-ui, sans-serif; color: #192a3a; }
+  h1 { line-height: 1.2; }
+  .card { border: 1px solid #cad4df; border-radius: 12px; padding: 1rem; margin: 1rem 0; }
+  .pair { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; }
+  audio { width: 100%; }
+  button, select { font: inherit; padding: .45rem .7rem; }
+  button { cursor: pointer; }
+  .note { color: #42556a; }
+  .result { font-weight: 650; }
+</style>
+<h1>Comparer les voix — Plug &amp; Charge B2</h1>
+<p>Écoutez A et B au même volume, de préférence au casque. Jugez surtout la prononciation, les liaisons, le rythme et l’intonation. L’ordre des deux outils change à chaque phrase pour réduire le biais.</p>
+<label for="engine-one">Première source</label>
+<select id="engine-one"><option>Gemini</option><option>XTTS-v2</option><option>F5-TTS</option></select>
+<label for="engine-two">Deuxième source</label>
+<select id="engine-two"><option>F5-TTS</option><option>XTTS-v2</option><option>Gemini</option></select>
+<label for="clip">Phrase à comparer</label>
+<select id="clip"></select>
+<p id="availability" class="note" aria-live="polite"></p>
+<p id="text" class="card"></p>
+<div class="pair">
+  <section class="card"><h2>Voix A</h2><audio id="audio-a" controls preload="none"></audio></section>
+  <section class="card"><h2>Voix B</h2><audio id="audio-b" controls preload="none"></audio></section>
+</div>
+<fieldset class="card"><legend>Quelle version aiderait le mieux un apprenant ?</legend>
+  <button id="vote-a" type="button">A</button>
+  <button id="vote-b" type="button">B</button>
+  <button id="vote-equal" type="button">Équivalentes</button>
+  <p id="result" class="result" aria-live="polite"></p>
+</fieldset>
+<label for="remark">Remarque (mot mal prononcé, liaison, débit, prosodie)</label><br>
+<textarea id="remark" rows="3" style="width:100%;box-sizing:border-box"></textarea><br>
+<button id="save" type="button">Enregistrer la remarque</button>
+<button id="export" type="button">Exporter les résultats CSV</button>
+<p class="note">Les évaluations restent dans ce navigateur. Cette page n’envoie aucun texte ni audio à un service externe. Une transcription automatique ne peut pas, à elle seule, juger la prosodie native : l’écoute humaine reste décisive.</p>
+<script>
+  const $ = id => document.getElementById(id);
+  const players = [$('audio-a'), $('audio-b')];
+  const storageKey = 'plug-charge-voix-ab-v2';
+  const results = JSON.parse(localStorage.getItem(storageKey) || '{}');
+  let sources = {}, clips = {}, order = [], current = '';
+  const resultKey = id => [$('engine-one').value, $('engine-two').value].sort().join('|') + '::' + id;
+  players.forEach((player, index) => player.addEventListener('play', () => players[1-index].pause()));
+  function show(id) {
+    players.forEach(player => { player.pause(); player.removeAttribute('src'); player.load(); });
+    current = id;
+    order = Math.random() < .5 ? [$('engine-one').value, $('engine-two').value] : [$('engine-two').value, $('engine-one').value];
+    $('text').textContent = clips[id].text;
+    players.forEach((player, index) => {
+      player.src = `audio/${sources[order[index]].folder}/${encodeURIComponent(id)}.mp3`;
+    });
+    $('remark').value = results[resultKey(id)]?.remark || '';
+    $('result').textContent = results[resultKey(id)] ? `Évaluation enregistrée : ${results[resultKey(id)].choice}` : '';
+  }
+  function save(choice) {
+    results[resultKey(current)] = {id: current, text: clips[current].text, choice, a: order[0], b: order[1], remark: $('remark').value.trim()};
+    localStorage.setItem(storageKey, JSON.stringify(results));
+    $('result').textContent = `Enregistré : ${choice}. A = ${order[0]} ; B = ${order[1]}.`;
+  }
+  $('vote-a').onclick = () => save('A');
+  $('vote-b').onclick = () => save('B');
+  $('vote-equal').onclick = () => save('Équivalentes');
+  $('save').onclick = () => save(results[resultKey(current)]?.choice || 'À réécouter');
+  $('clip').onchange = () => show($('clip').value);
+  function refresh() {
+    const first = $('engine-one').value, second = $('engine-two').value;
+    $('clip').replaceChildren();
+    if (first === second) {
+      $('availability').textContent = 'Choisissez deux sources différentes.';
+      $('text').textContent = '';
+      players.forEach(player => { player.pause(); player.removeAttribute('src'); player.load(); });
+      return;
+    }
+    clips = Object.fromEntries(Object.entries(sources[first].clips).filter(([id]) => sources[second].clips[id]));
+    for (const id of Object.keys(clips).sort()) {
+      const option = document.createElement('option');
+      option.value = id;
+      option.textContent = id;
+      $('clip').append(option);
+    }
+    $('availability').textContent = `${Object.keys(clips).length} textes disponibles dans les deux sources.`;
+    if ($('clip').options.length) show($('clip').value);
+    else $('text').textContent = 'Aucun fichier commun encore disponible.';
+  }
+  $('engine-one').onchange = refresh;
+  $('engine-two').onchange = refresh;
+  $('export').onclick = () => {
+    const quote = value => `"${String(value || '').replaceAll('"', '""')}"`;
+    const rows = [['fichier','texte','choix','voix A','voix B','remarque'],
+      ...Object.values(results).map(r => [r.id, r.text, r.choice, r.a, r.b, r.remark])];
+    const csv = '\ufeff' + rows.map(row => row.map(quote).join(';')).join('\r\n');
+    const link = document.createElement('a');
+    link.href = URL.createObjectURL(new Blob([csv], {type: 'text/csv;charset=utf-8'}));
+    link.download = 'comparaison-voix-plug-charge.csv';
+    link.click();
+    setTimeout(() => URL.revokeObjectURL(link.href), 1000);
+  };
+  const loadManifest = path => fetch(path).then(response => {
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    return response.json();
+  });
+  Promise.all([
+    loadManifest('audio/neuronal%20V1.2/manifest.json'),
+    loadManifest('audio/neuronal%20F5-TTS/manifest.json').catch(() => ({clips: {}})),
+  ]).then(([xtts, f5]) => {
+    sources = {
+      Gemini: {folder: 'neuronal', clips: xtts.clips},
+      'XTTS-v2': {folder: 'neuronal%20V1.2', clips: xtts.clips},
+      'F5-TTS': {folder: 'neuronal%20F5-TTS', clips: f5.clips},
+    };
+    refresh();
+  }).catch(error => $('availability').textContent = `Catalogue indisponible : ${error.message}. Lancez un serveur HTTP local.`);
+</script>
+</html>

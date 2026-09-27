@@ -1504,9 +1504,13 @@ window.IMPACT60 = {
     }
   ],
   "voix": {
-    "neuronale": "fr-FR-RemyMultilingualNeural",
+    "gemini": {
+      "modele": "gemini-3.8-flash-tts",
+      "voix": "fr-fr-tutor-5"
+    },
     "dossiers": {
       "formateur": "audio/formateur/",
+      "gemini": "audio/gemini/",
       "neuronale": "audio/neuronal/"
     }
   },
